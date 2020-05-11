@@ -6,7 +6,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
+    background-image: url('../assets/markus-spiske-qjnAnF0jIGk-unsplash.jpg');
+    background-size: cover;
 
     h1, h2, p {
      text-align: center;
@@ -27,7 +29,16 @@ header {
     p {
         font-size: 3rem;
     }
+    .headerContent {
+        
+    }
 
+    .aboutMeImage {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
 }
 
 .social-bar {

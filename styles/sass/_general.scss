@@ -3,6 +3,7 @@ $bgColour: #f5f5f5;
 html {
     background-color: $bgColour;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 a{

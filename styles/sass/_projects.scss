@@ -1,0 +1,19 @@
+.projectCard {
+    margin: 10px 0;
+    .projectText, .projectImage {
+        width: 50%;
+    }
+    .projectText {
+        h3 {
+            text-align: center;
+        }
+
+        .stackTag {
+            padding: 5px;
+            background-color: $activeButton;
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+    }
+}

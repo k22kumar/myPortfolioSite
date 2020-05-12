@@ -1,14 +1,103 @@
-$bgColour: #f5f5f5;
+$bgColour: #eeeeee;
 
 html {
     background-color: $bgColour;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 a{
     color: black;
+    text-decoration: none;
+    font-family: $primaryFont;
 }
 
 a:visited {
     color: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+h1,h2,h3,p {
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    font-family: $primaryFont;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.85rem;
+    font-family: $primaryFont;
+    font-weight: 600;
+}
+
+p {
+    font-family: $secondaryFont;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+section {
+    background-color: $sectionBG;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1280px;
+}
+
+.aboutMeContainer, .projectsContainer, .skillsContainer, .contactContainer {
+    padding: 30px 40px;
+    margin: 30px auto;
+}
+
+.flexParent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.flexColumn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.textHighlight {
+    font-weight: 700;
 }

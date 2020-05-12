@@ -221,7 +221,7 @@ html {
           box-sizing: inherit;
 }
 
-.sr-only {
+.visuallyHidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -231,18 +231,20 @@ html {
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+  clip: rect(0 0 0);
   overflow: hidden;
 }
 
 html {
-  background-color: #f5f5f5;
+  background-color: #eeeeee;
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 a {
   color: black;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 a:visited {
@@ -250,17 +252,58 @@ a:visited {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
-p {
+h1, h2, h3, p {
   padding: 0;
   margin: 0;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 1.85rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 1.5;
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+section {
+  background-color: #fefefe;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .wrapper {
@@ -269,48 +312,69 @@ img {
   max-width: 1280px;
 }
 
-header, .social-bar {
+.aboutMeContainer, .projectsContainer, .skillsContainer, .contactContainer {
+  padding: 30px 40px;
+  margin: 30px auto;
+}
+
+.flexParent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.flexColumn {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.textHighlight {
+  font-weight: 700;
 }
 
 header {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 50vh;
-  background-image: url("../assets/markus-spiske-qjnAnF0jIGk-unsplash.jpg");
+  height: 40vh;
+  background: #26304a;
+  background: radial-gradient(circle, rgba(38, 48, 74, 0.428992) 0%, #26304a 100%), url("../assets/markus-spiske-qjnAnF0jIGk-unsplash.jpg");
+  background-attachment: fixed;
   background-size: cover;
 }
 
-header h1, header h2, header p {
-  text-align: center;
-  font-family: 'Bebas Neue', cursive;
-  font-family: 'Press Start 2P', cursive;
-  font-family: 'Bungee Shade', cursive;
+header nav ul {
+  background-color: rgba(38, 48, 74, 0.1);
+}
+
+header nav ul li {
+  height: 100%;
+}
+
+header nav ul li a {
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  height: 100%;
+  padding: 20px;
+  font-size: 4rem;
+}
+
+header nav ul li a:hover, header nav ul li a:focus {
+  background-color: #C1E0FF;
   color: black;
-  margin: 15px 0;
-  letter-spacing: 2px;
 }
 
-header h1 {
-  font-size: 8rem;
-}
-
-header h2 {
-  font-size: 6rem;
-}
-
-header p {
-  font-size: 3rem;
+header .landingUpperHalf {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 header .aboutMeImage {
@@ -318,9 +382,48 @@ header .aboutMeImage {
   height: 150px;
   border-radius: 50%;
   overflow: hidden;
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  bottom: 0;
+  margin-bottom: -75px;
 }
 
-.social-bar {
+.landingDivider {
+  width: 100%;
+  height: 60vh;
+  padding-top: 100px;
+}
+
+.landingLowerHalf {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landingLowerHalf h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.landingLowerHalf h2 {
+  margin-top: 20px;
+}
+
+.landingLowerHalf .scrollDown {
+  font-size: 3rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.landingLowerHalf .scrollDown:hover, .landingLowerHalf .scrollDown:focus {
+  scale: 1.2;
+  color: #F06449;
+}
+
+.landingLowerHalf .social-bar {
   width: 40%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -328,6 +431,56 @@ header .aboutMeImage {
   margin: 30px auto;
   font-size: 3rem;
   color: black;
+}
+
+.landingLowerHalf .social-bar li {
+  background-color: #26304A;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  overflow: hidden;
+}
+
+.landingLowerHalf .social-bar li a {
+  width: 100%;
+  height: 100%;
+  font-size: 1.9rem;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.landingLowerHalf .social-bar li a:hover, .landingLowerHalf .social-bar li a:focus {
+  background-color: #C1E0FF;
+  color: black;
+}
+
+.aboutMeContainer h2 {
+  margin-bottom: 5px;
+}
+
+.aboutMeContainer p {
+  margin: 10px 0;
+}
+
+.projectCard {
+  margin: 10px 0;
+}
+
+.projectCard .projectText, .projectCard .projectImage {
+  width: 50%;
+}
+
+.projectCard .projectText h3 {
+  text-align: center;
+}
+
+.projectCard .projectText .stackTag {
+  padding: 5px;
+  background-color: #C1E0FF;
+  margin-right: 10px;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 450px) {

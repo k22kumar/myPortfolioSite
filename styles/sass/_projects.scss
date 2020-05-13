@@ -1,13 +1,32 @@
 .projectCard {
     margin: 10px 0;
     .projectText, .projectImage {
-        width: 50%;
+        width: calc(50% - 10px);
+    }
+    .projectImage {
+        margin-right: 20px;
     }
     .projectText {
         h3 {
             text-align: center;
         }
-
+        p a {
+            font-weight: 700;
+            text-decoration: underline;
+        }
+        .liveLink, .repoLink {
+            padding: 10px;
+            margin: 10px;
+            background-color: $normalButton;
+            color: $normalFont;
+            font-size: 1.7rem;
+            border-radius: 5px;
+            transition: all 0.3s;
+            &:hover, &:focus {
+                background-color: $activeButton;
+                color: $activeFont;
+            }
+        }
         .stackTag {
             padding: 5px;
             background-color: $activeButton;

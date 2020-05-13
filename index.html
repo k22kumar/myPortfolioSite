@@ -7,7 +7,9 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/63b84c9d87.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@100;400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Kajanth Kumar</title>
 </head>
@@ -27,7 +29,8 @@
                         <a href="#about" aria-label="Click to learn more about Kajanth">About</a>
                     </li>
                     <li class="navItem flexParent">
-                        <a href="#contact" aria-label="Click to find out how to get into contact with Kajanth">Contact</a>
+                        <a href="#contact"
+                            aria-label="Click to find out how to get into contact with Kajanth">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -61,7 +64,8 @@
                         </a>
                     </li>
                     <li>
-                        <a class="flexParent" href="mailto:kajanthkumar@gmail.com" target="_blank" aria-label="Email Kajanth">
+                        <a class="flexParent" href="mailto:kajanthkumar@gmail.com" target="_blank"
+                            aria-label="Email Kajanth">
                             <i class="fas fa-envelope" aria-hidden="true"></i>
                         </a>
                     </li>
@@ -71,121 +75,145 @@
                 </a>
             </section>
         </div>
-        
 
-        <section id="about" class="aboutMeContainer flexParent flexColumn wrapper">
+        <div id="about" class="contentContainer">
             <h2>About Me</h2>
-            <div class="aboutText flexColumn">
-                <p>I am a Full Stack Developer from Toronto, Ontario who loves bringing ideas to life. After graduating <span class="textHighlight">Ryerson University</span> with a <span class="textHighlight">Computer Science degree</span>, I spent my summer pondering the possibilities before realizing my passion for Web Development. After completing various courses at <span class="textHighlight">Juno College</span>, I was hooked and underwent the bootcamp as well.</p>
-                <p>I strive to build amazing, accessible experiences for everyone while maintaining clean code.
-                </p>
-                <p> When I'm not designing mechanics for my next web game, I love playing board games, video games and watching superhero flicks with friends!</p>
-                <div class="flexParent">
-                    <button id="downloadCV" class="aboutButton download" aria-label="Click to download Kajanth's resume"></button>
-                    <a class="aboutButton aboutContact" aria-label="Click to learn how to contact Kajanth"></a>
+            <section  class="aboutMeContainer flexParent flexColumn wrapper">
+                <div class="aboutText flexColumn">
+                    <p>I am a Full Stack Developer from Toronto, Ontario who loves bringing ideas to life. After
+                        graduating <span class="textHighlight">Ryerson University</span> with a <span
+                            class="textHighlight">Computer Science degree</span>, I spent my summer pondering the
+                        possibilities before realizing my passion for Web Development. After completing various courses
+                        at <span class="textHighlight">Juno College</span>, I was hooked and underwent the bootcamp as
+                        well.</p>
+                    <p>I strive to build amazing, accessible experiences for everyone while maintaining clean code.
+                    </p>
+                    <p> When I'm not designing mechanics for my next web game, I love playing board games, video games
+                        and watching superhero flicks with friends!</p>
+                    <div class="flexParent">
+                        <button id="downloadCV" class="aboutButton download"
+                            aria-label="Click to download Kajanth's resume"></button>
+                        <a class="aboutButton aboutContact" aria-label="Click to learn how to contact Kajanth"></a>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <section id="projects" class="projectsContainer flexParent flexColumn wrapper">
+        <div id="projects" class="contentContainer">
             <h2>Projects</h2>
-        <ul class="projectCard flexParent">
-            <li class="projectImage">
-                <img src="./assets/gemHeistMockUp.png" alt="Screen shot of Gem Heist web site project">
-            </li>
-            <li class="projectText">
+            <section  class="projectsContainer flexParent flexColumn wrapper">
                 <h3>Gem Heist</h3>
-                <ul class="projectStack flexParent">
-                    <li class="stackTag">Jquery</li>
-                    <li class="stackTag">Javascript</li>
-                    <li class="stackTag">Sass</li>
-                    <li class="stackTag">CSS3</li>
-                    <li class="stackTag">HTML</li>
+                <ul class="projectCard flexParent">
+                    <li class="projectImage">
+                        <img src="./assets/gemHeistMockUp.png" alt="Screen shot of Gem Heist web site project">
+                    </li>
+                    <li class="projectText">
+                        <ul class="projectStack flexParent flexWrap">
+                            <li class="stackTag">Jquery</li>
+                            <li class="stackTag">Javascript</li>
+                            <li class="stackTag">Sass</li>
+                            <li class="stackTag">CSS3</li>
+                            <li class="stackTag">HTML</li>
+                        </ul>
+                        <p>Jquery gem collecting game based on the <a
+                                href="https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/"
+                                target="_blank">knapsack problem</a> and Catwoman</p>
+                        <div class="projectLinks flexParent">
+                            <a href="" class="liveLink" aria-label="Click to view INSERT PROJECT NAME live">Live
+                                Link</a>
+                            <a href="" class="repoLink" aria-label="Click to view INSERT PROJECT NAME repository">Repo
+                                Link</a>
+                        </div>
+                    </li>
                 </ul>
-                <p>Jquery gem collecting game based on the</p>
-                <a href="https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/"  target="_blank">knapsack problem</a>
-                <p> and Catwoman</p>
-                <div class="projectLinks flexParent">
-                     <a href="" class="liveLink" aria-label="Click to view INSERT PROJECT NAME live">Live Link</a>
-                     <a href="" class="repoLink" aria-label="Click to view INSERT PROJECT NAME repository">Repo Link</a>
-                </div>
-            </li>
-        </ul>
-        </section>
-        <section id="skills" class="skillsContainer flexParent wrapper">
-            <ul class="skillsSelector flexParent">
-                <li class="skillChoice">
-                    <button aria-label="Click to filter by front end skills">Front End</button>
-                </li>
-                <li class="skillChoice">
-                    <button aria-label="Click to filter by back end skills"></button>
-                </li>
-                <li class="skillChoice">
-                    <button aria-label="Click to see Other skills"></button>
-                </li>
-                <li class="skillChoice">
-                    <button aria-label="Click to see all skills"></button>
-                </li>
-            </ul>
-            <ul class="skillGallery flexParent">
-                <li class="skill"></li>
-                <li class="skill"></li>
-                <li class="skill"></li>
-                <li class="skill"></li>
-                <li class="skill"></li>
-                <li class="skill"></li>
-                <li class="skill"></li>
-                <li class="skill"></li>
-                <li class="skill"></li>
-                <li class="skill"></li>
-                <li class="skill"></li>
-                <li class="skill"></li>
-            </ul>
-        </section>
-        <section id="contact" class="contactContainer flexParent wrapper">
-            <ul class="contactSocial flexParent">
-                <li>
-                    <h3>Get in touch</h3>
-                </li>
-                <li class="contactEmail">
-                    <p>email: kajanthkumar@gmail.com </p>
-                    <button id="copyEmail" aria-label="Click to copy Kajanth's email"><i class="fas fa-clipboard" aria-hidden="true"></i></button>
-                </li>
-                <li class="contactBooking">
-                    <p>Book a meeting</p>
-                    <button id="copyEmail" aria-label="Click to schedule a meeting with Kajanth"><i class="fas fa-calendar-alt" aria-hidden="true"></i></button>
-                </li>
-                <li class="contactSocial flexParent">
-                    <p>Connect on social</p>
-                        <a href="https://twitter.com/KajanthKodes" target="_blank" aria-label="Go to Kajanth's Twitter Page">
+            </section>
+        </div>
+
+        <div id="skills"class="contentContainer">
+            <h2>Skills</h2>
+            <section class="skillsContainer flexParent wrapper">
+                <ul class="skillsSelector flexParent">
+                    <li class="skillChoice">
+                        <button aria-label="Click to filter by front end skills">Front End</button>
+                    </li>
+                    <li class="skillChoice">
+                        <button aria-label="Click to filter by back end skills"></button>
+                    </li>
+                    <li class="skillChoice">
+                        <button aria-label="Click to see Other skills"></button>
+                    </li>
+                    <li class="skillChoice">
+                        <button aria-label="Click to see all skills"></button>
+                    </li>
+                </ul>
+                <ul class="skillGallery flexParent flexWrap">
+                    <li class="skill"></li>
+                    <li class="skill"></li>
+                    <li class="skill"></li>
+                    <li class="skill"></li>
+                    <li class="skill"></li>
+                    <li class="skill"></li>
+                    <li class="skill"></li>
+                    <li class="skill"></li>
+                    <li class="skill"></li>
+                    <li class="skill"></li>
+                    <li class="skill"></li>
+                    <li class="skill"></li>
+                </ul>
+            </section>
+        </div>
+
+        <div id="contact" class="contentContainer">
+            <h2>Contact</h2>
+            <section  class="contactContainer flexParent wrapper">
+                <ul class="contactSocial flexParent">
+                    <li>
+                        <h3>Get in touch</h3>
+                    </li>
+                    <li class="contactEmail">
+                        <p>email: kajanthkumar@gmail.com </p>
+                        <button id="copyEmail" aria-label="Click to copy Kajanth's email"><i class="fas fa-clipboard"
+                                aria-hidden="true"></i></button>
+                    </li>
+                    <li class="contactBooking">
+                        <p>Book a meeting</p>
+                        <button id="copyEmail" aria-label="Click to schedule a meeting with Kajanth"><i
+                                class="fas fa-calendar-alt" aria-hidden="true"></i></button>
+                    </li>
+                    <li class="contactSocial flexParent">
+                        <p>Connect on social</p>
+                        <a href="https://twitter.com/KajanthKodes" target="_blank"
+                            aria-label="Go to Kajanth's Twitter Page">
                             <i class="fab fa-twitter" aria-hidden="true"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/kajanth-kumar/" target="_blank" aria-label="Go to Kajanth's LinkedIn Page">
+                        <a href="https://www.linkedin.com/in/kajanth-kumar/" target="_blank"
+                            aria-label="Go to Kajanth's LinkedIn Page">
                             <i class="fab fa-linkedin" aria-hidden="true"></i>
                         </a>
                         <a href="https://github.com/k22kumar" target="_blank" aria-label="Go to Kajanth's GitHub Page">
                             <i class="fab fa-github" aria-hidden="true"></i>
                         </a>
-                </li>
-            </ul>
-            <ul class="contactMessage flexParent">
-                <li>
-                    <h3>Write a Message</h3>
-                </li>
-                <li>
-                    <form class="flexParent" action="FORMSPREE">
-                        <label class="visuallyHidden" for="name">name</label>
-                        <input id="name" name="name" type="text" placeholder="Name" required>
-                        <label class="visuallyHidden" for="email">email</label>
-                        <input id="email" name="email" type="text" placeholder="Email" required>
-                        <label class="visuallyHidden" for="message">message</label>
-                        <input id="message" name="message" type="text" placeholder="Message" required>
-                        <button class="sendMessage" type="submit">Send Message</button>
-                    </form>
-                </li>
-            </ul>
-        </section>
-        
+                    </li>
+                </ul>
+                <ul class="contactMessage flexParent">
+                    <li>
+                        <h3>Write a Message</h3>
+                    </li>
+                    <li>
+                        <form class="flexParent" action="FORMSPREE">
+                            <label class="visuallyHidden" for="name">name</label>
+                            <input id="name" name="name" type="text" placeholder="Name" required>
+                            <label class="visuallyHidden" for="email">email</label>
+                            <input id="email" name="email" type="text" placeholder="Email" required>
+                            <label class="visuallyHidden" for="message">message</label>
+                            <input id="message" name="message" type="text" placeholder="Message" required>
+                            <button class="sendMessage" type="submit">Send Message</button>
+                        </form>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
     </main>
     <footer>
         <p>Developed by Kajanth Kumar. Design Modifed from <a href="">insert linke here</a></p>

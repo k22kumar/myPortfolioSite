@@ -266,7 +266,7 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 2rem;
-  margin-bottom: 5px;
+  text-align: center;
 }
 
 h3 {
@@ -312,9 +312,13 @@ section {
   max-width: 1280px;
 }
 
+.contentContainer {
+  padding-top: 70px;
+}
+
 .aboutMeContainer, .projectsContainer, .skillsContainer, .contactContainer {
   padding: 30px 40px;
-  margin: 30px auto;
+  margin: 60px auto;
 }
 
 .flexParent {
@@ -334,6 +338,11 @@ section {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.flexWrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .textHighlight {
@@ -482,11 +491,36 @@ header .aboutMeImage {
 }
 
 .projectCard .projectText, .projectCard .projectImage {
-  width: 50%;
+  width: calc(50% - 10px);
+}
+
+.projectCard .projectImage {
+  margin-right: 20px;
 }
 
 .projectCard .projectText h3 {
   text-align: center;
+}
+
+.projectCard .projectText p a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.projectCard .projectText .liveLink, .projectCard .projectText .repoLink {
+  padding: 10px;
+  margin: 10px;
+  background-color: #26304A;
+  color: white;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.projectCard .projectText .liveLink:hover, .projectCard .projectText .liveLink:focus, .projectCard .projectText .repoLink:hover, .projectCard .projectText .repoLink:focus {
+  background-color: #C1E0FF;
+  color: black;
 }
 
 .projectCard .projectText .stackTag {

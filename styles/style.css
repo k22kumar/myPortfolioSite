@@ -349,7 +349,7 @@ header {
 }
 
 header nav ul {
-  background-color: rgba(38, 48, 74, 0.1);
+  background-color: black;
 }
 
 header nav ul li {
@@ -361,8 +361,8 @@ header nav ul li a {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   height: 100%;
-  padding: 20px;
-  font-size: 4rem;
+  padding: 10px 20px;
+  font-size: 2.4rem;
 }
 
 header nav ul li a:hover, header nav ul li a:focus {
@@ -375,6 +375,9 @@ header .landingUpperHalf {
   width: 100%;
   height: 100%;
   position: relative;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
 }
 
 header .aboutMeImage {

@@ -5,8 +5,15 @@ header {
     background-attachment: fixed;
     background-size: cover;
 
+
+    nav {
+        width: 100%;
+         position: fixed;
+         z-index: 2;
+         background-color: black;
+    }
      nav ul{
-         background-color: $navBar;
+
         li {
             height: 100%;
         }
@@ -15,8 +22,8 @@ header {
             color: white;
             transition: all 0.3s;
             height: 100%;
-            padding: 20px;
-            font-size: 4rem;
+            padding: 10px 20px;
+            font-size: 2.4rem;
             &:hover, &:focus{
                 background-color: $activeButton;
                 color: $activeFont;
@@ -29,6 +36,14 @@ header {
         width: 100%;
         height: 100%;
         position: relative;
+        box-shadow: none;
+        padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 
     .aboutMeImage {

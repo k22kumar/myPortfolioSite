@@ -29,7 +29,7 @@ h2 {
     font-family: $primaryFont;
     font-weight: 600;
     font-size: 2rem;
-    margin-bottom: 5px;
+    text-align: center;
 }
 
 h3 {
@@ -74,9 +74,13 @@ section {
     max-width: 1280px;
 }
 
+.contentContainer {
+    padding-top: 70px;
+}
+
 .aboutMeContainer, .projectsContainer, .skillsContainer, .contactContainer {
     padding: 30px 40px;
-    margin: 30px auto;
+    margin: 60px auto;
 }
 
 .flexParent {
@@ -98,6 +102,15 @@ section {
             flex-direction: column;
 }
 
+.flexWrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
 .textHighlight {
     font-weight: 700;
+}
+
+.toUpper {
+    text-transform: uppercase;
 }

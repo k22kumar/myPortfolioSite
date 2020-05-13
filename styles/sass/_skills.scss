@@ -1,0 +1,23 @@
+.skillsSelector {
+    width: 100%;
+}
+
+.skillChoice {
+    button {
+        width: 100px;
+        padding: 10px;
+        font-family: $primaryFont;
+        font-size: 1.5rem;
+        background-color: $normalButton;
+        color: $normalFont;
+        transition: all 0.3s;
+        &:hover, &:focus {
+            color: $activeFont;
+            background-color: $activeButton;
+    }
+    }
+}
+
+.skill {
+    width: 25%;
+}

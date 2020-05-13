@@ -349,6 +349,10 @@ section {
   font-weight: 700;
 }
 
+.toUpper {
+  text-transform: uppercase;
+}
+
 header {
   height: 40vh;
   background: #26304a;
@@ -441,7 +445,7 @@ header .aboutMeImage {
 
 .landingLowerHalf .scrollDown:hover, .landingLowerHalf .scrollDown:focus {
   scale: 1.2;
-  color: #F06449;
+  color: #F0816A;
 }
 
 .landingLowerHalf .social-bar {
@@ -455,7 +459,6 @@ header .aboutMeImage {
 }
 
 .landingLowerHalf .social-bar li {
-  background-color: #26304A;
   border-radius: 50%;
   height: 45px;
   width: 45px;
@@ -463,6 +466,7 @@ header .aboutMeImage {
 }
 
 .landingLowerHalf .social-bar li a {
+  background-color: #26304A;
   width: 100%;
   height: 100%;
   font-size: 1.9rem;
@@ -486,16 +490,27 @@ header .aboutMeImage {
   margin: 10px 0;
 }
 
+.projectsContainer h3 {
+  margin-bottom: 10px;
+}
+
 .projectCard {
   margin: 10px 0;
+  height: 232px;
 }
 
 .projectCard .projectText, .projectCard .projectImage {
   width: calc(50% - 10px);
+  height: 100%;
 }
 
 .projectCard .projectImage {
   margin-right: 20px;
+}
+
+.projectCard .projectText {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .projectCard .projectText h3 {
@@ -505,6 +520,10 @@ header .aboutMeImage {
 .projectCard .projectText p a {
   font-weight: 700;
   text-decoration: underline;
+}
+
+.projectCard .projectText .projectDescription {
+  margin: 10px 0px;
 }
 
 .projectCard .projectText .liveLink, .projectCard .projectText .repoLink {
@@ -527,7 +546,33 @@ header .aboutMeImage {
   padding: 5px;
   background-color: #C1E0FF;
   margin-right: 10px;
+  margin-bottom: 10px;
   font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.skillsSelector {
+  width: 100%;
+}
+
+.skillChoice button {
+  width: 100px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  background-color: #26304A;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.skillChoice button:hover, .skillChoice button:focus {
+  color: black;
+  background-color: #C1E0FF;
+}
+
+.skill {
+  width: 25%;
 }
 
 @media (max-width: 450px) {

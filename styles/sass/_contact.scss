@@ -64,6 +64,7 @@
     }
 }
 
+
 textarea, .messageName, .messageEmail{
     font-size: 1.6rem;
     width: 100%;
@@ -75,6 +76,16 @@ textarea, .messageName, .messageEmail{
     overflow: auto;
 } 
 
-.messageName, .messageEmail {
-    
+textarea {
+    height:  130px;
+}
+
+
+.contactMessage {
+    li {
+        width: 100%;
+    }
+    h3 {
+        margin-bottom: 15px;
+    }
 }

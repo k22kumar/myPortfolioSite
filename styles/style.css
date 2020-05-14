@@ -382,7 +382,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover, header nav ul li a:focus {
-  background-color: #C1E0FF;
+  background-color: #F59C8A;
   color: black;
 }
 
@@ -477,7 +477,7 @@ header .aboutMeImage {
 }
 
 .landingLowerHalf .socialBar li a:hover, .landingLowerHalf .socialBar li a:focus {
-  background-color: #C1E0FF;
+  background-color: #F59C8A;
   color: black;
 }
 
@@ -492,6 +492,10 @@ header .aboutMeImage {
 .aboutMeContainer p {
   text-align: left;
   margin: 10px 0;
+}
+
+.projectsContainer {
+  padding: 50px 40px;
 }
 
 .projectsContainer h3 {
@@ -543,13 +547,13 @@ header .aboutMeImage {
 }
 
 .projectCard .projectText .liveLink:hover, .projectCard .projectText .liveLink:focus, .projectCard .projectText .repoLink:hover, .projectCard .projectText .repoLink:focus {
-  background-color: #C1E0FF;
+  background-color: #F59C8A;
   color: black;
 }
 
 .projectCard .projectText .stackTag {
   padding: 5px;
-  background-color: #C1E0FF;
+  background-color: #F59C8A;
   margin-right: 10px;
   margin-bottom: 10px;
   font-size: 1.5rem;
@@ -574,7 +578,7 @@ header .aboutMeImage {
 
 .skillChoice button:hover, .skillChoice button:focus {
   color: black;
-  background-color: #C1E0FF;
+  background-color: #F59C8A;
 }
 
 .skill {
@@ -628,7 +632,7 @@ header .aboutMeImage {
 }
 
 .contactSocial a:hover, .contactSocial a:focus, .contactBooking:hover, .contactBooking:focus, .copyEmail:hover, .copyEmail:focus, .sendMessage:hover, .sendMessage:focus {
-  background-color: #C1E0FF;
+  background-color: #F59C8A;
   color: black;
 }
 
@@ -694,15 +698,15 @@ footer {
 }
 
 footer a {
+  text-decoration: underline;
   color: white;
 }
 
 footer p + a {
   padding: 10px 20px;
   margin: 10px;
-  background-color: #C1E0FF;
+  background-color: #F59C8A;
   color: black;
-  text-decoration: underline;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border-radius: 5px;

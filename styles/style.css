@@ -263,9 +263,9 @@ h1, h2, h3, p {
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -552,6 +552,7 @@ header .aboutMeImage {
 }
 
 .skillsSelector {
+  margin-top: 20px;
   width: 100%;
 }
 
@@ -596,6 +597,12 @@ header .aboutMeImage {
   text-align: center;
 }
 
+.contactContainer h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 1.8rem;
+}
+
 .contactMessage, .contactSocial {
   width: calc(50% - 10px);
 }
@@ -603,6 +610,26 @@ header .aboutMeImage {
 .contactMessage button, .contactMessage a, .contactSocial button, .contactSocial a {
   font-family: "Roboto", sans-serif;
   font-size: 1.7rem;
+}
+
+.contactSocial a, .contactBooking, .copyEmail, .sendMessage {
+  padding: 10px;
+  margin: 10px;
+  background-color: #26304A;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+.contactSocial a:hover, .contactSocial a:focus, .contactBooking:hover, .contactBooking:focus, .copyEmail:hover, .copyEmail:focus, .sendMessage:hover, .sendMessage:focus {
+  background-color: #C1E0FF;
+  color: black;
+}
+
+.copyEmail {
+  width: 40px;
+  height: 40px;
 }
 
 .contactSocial {
@@ -621,9 +648,25 @@ header .aboutMeImage {
   margin-right: 10px;
 }
 
-.contactSocial .socialBar
-.contactBooking {
+.contactSocial .connectSocialBar a {
+  padding: 13px;
+  font-size: 2.5rem;
+  border-radius: 50%;
+}
+
+.contactSocial .contactBooking i {
   margin-left: 10px;
+}
+
+textarea, .messageName, .messageEmail {
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #26304A;
+  resize: none;
+  overflow: auto;
 }
 
 @media (max-width: 450px) {

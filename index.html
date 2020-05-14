@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/63b84c9d87.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@100;400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Devicon -->
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <title>Kajanth Kumar</title>
 </head>
 
@@ -44,7 +47,7 @@
             <section class="landingLowerHalf wrapper flexParent flexColumn">
                 <h1>Kajanth Kumar</h1>
                 <h2>Full Stack Developer</h2>
-                <ul class="social-bar flexParent">
+                <ul class="socialBar flexParent">
                     <li>
                         <a class="flexParent" href="https://twitter.com/KajanthKodes" target="_blank"
                             aria-label="Go to Kajanth's Twitter Page">
@@ -255,21 +258,97 @@
             </ul>
             <section class="skillsContainer flexParent wrapper">
                 <ul class="skillGallery flexParent flexWrap">
-                    <li class="skill">
-                        <img src="./assets/skillSVG/sass.svg" alt="sass">
+                    <li class="skill flexParent flexColumn">
+                        <div class="iconHolder flexParent ">
+                            <img src="./assets/skillSVG/html-5.svg" alt="html">
+                        </div>
+                        <p class="toUpper">html5</p>
+                    </li>
+                    <li class="skill flexParent flexColumn">
+                        <div class="iconHolder flexParent ">
+                            <img src="./assets/skillSVG/css-3.svg" alt="css3">
+                        </div>
+                        <p class="toUpper">css3</p>
+                    </li>
+                    <li class="skill flexParent flexColumn">
+                        <div class="iconHolder flexParent ">
+                            <img src="./assets/skillSVG/sass.svg" alt="sass">
+                        </div>
                         <p class="toUpper">sass</p>
                     </li>
-                    <li class="skill"></li>
-                    <li class="skill"></li>
-                    <li class="skill"></li>
-                    <li class="skill"></li>
-                    <li class="skill"></li>
-                    <li class="skill"></li>
-                    <li class="skill"></li>
-                    <li class="skill"></li>
-                    <li class="skill"></li>
-                    <li class="skill"></li>
-                    <li class="skill"></li>
+                    <li class="skill flexParent flexColumn">
+                        <div class="iconHolder flexParent ">
+                            <img src="./assets/skillSVG/javascript.svg" alt="javascript">
+                        </div>
+                        <p>Java Script</p>
+                    </li>
+                    <li class="skill flexParent flexColumn">
+                        <div class="iconHolder flexParent ">
+                            <i class="devicon-jquery-plain"></i>
+                        </div>
+                        <p>jQuery</p>
+                    </li>
+                    <li class="skill flexParent flexColumn">
+                        <div class="iconHolder flexParent ">
+                            <i aria-label="responsive design" class="fas fa-mobile-alt"></i>
+                        </div>
+                        <p>Responsive Design</p>
+                    </li>
+                    <li class="skill flexParent flexColumn">
+                        <div class="iconHolder flexParent ">
+                            <i aria-label="accessibility" class="fas fa-universal-access"></i>
+                        </div>
+                        <p>Accessibility</p>
+                    </li>
+                    <li class="skill flexParent flexColumn">
+                        <div class="iconHolder flexParent ">
+                            <img src="./assets/skillSVG/react.svg" alt="react">
+                        </div>
+                        <p>React</p>
+                    </li>
+                    <li class="skill flexParent flexColumn">
+                        <div class="iconHolder flexParent ">
+                            <img src="./assets/skillSVG/firebase.svg" alt="firebase">
+                        </div>
+                        <p>Firebase</p>
+                    </li>
+                    <li class="skill flexParent flexColumn">
+                        <div class="iconHolder flexParent ">
+                            <img src="./assets/skillSVG/mysql.svg" alt="mySQL">
+                        </div>
+                        <p>mySQL</p>
+                    </li>
+                    <li class="skill flexParent flexColumn">
+                        <div class="iconHolder flexParent ">
+                            <img src="./assets/skillSVG/oracle.svg" alt="oracle">
+                        </div>
+                        <p class="toUpper">oracle</p>
+                    </li>
+                    <li class="skill flexParent flexColumn">
+                        <div class="iconHolder flexParent ">
+                            <img src="./assets/skillSVG/java.svg" alt="java">
+                        </div>
+                        <p >Java</p>
+                    </li>
+                    <li class="skill flexParent flexColumn">
+                        <div class="iconHolder flexParent ">
+                            <img src="./assets/skillSVG/c.svg" alt="C">
+                        </div>
+                        <p class="toUpper">c</p>
+                    </li>
+                    <li class="skill flexParent flexColumn">
+                        <div class="iconHolder flexParent ">
+                            <img src="./assets/skillSVG/visual-studio-code.svg" alt="visual studio code">
+                        </div>
+                        <p>Visual Studio</p>
+                    </li>
+                    <li class="skill flexParent flexColumn">
+                        <div class="iconHolder flexParent ">
+                            <img src="./assets/skillSVG/eclipse.svg" alt="eclipse">
+                        </div>
+                        <p>Eclipse</p>
+                    </li>
+                    
                 </ul>
             </section>
         </div>
@@ -277,41 +356,40 @@
         <div id="contact" class="contentContainer">
             <h2>Contact</h2>
             <section  class="contactContainer flexParent wrapper">
-                <ul class="contactSocial flexParent">
+                <ul class="contactSocial flexParent flexColumn">
                     <li>
                         <h3>Get in touch</h3>
                     </li>
-                    <li class="contactEmail">
-                        <p>email: kajanthkumar@gmail.com </p>
-                        <button id="copyEmail" aria-label="Click to copy Kajanth's email"><i class="fas fa-clipboard"
+                    <li class="flexParent contactEmail">
+                        <p>kajanthkumar@gmail.com</p>
+                        <button id="copyEmail" class="copyEmail" aria-label="Click to copy Kajanth's email"><i class="fas fa-clipboard"
                                 aria-hidden="true"></i></button>
                     </li>
-                    <li class="contactBooking">
-                        <p>Book a meeting</p>
-                        <button id="copyEmail" aria-label="Click to schedule a meeting with Kajanth"><i
+                    <li class=" contactBooking">
+                        <button id="copyEmail" aria-label="Click to schedule a meeting with Kajanth">Book a meeting<i
                                 class="fas fa-calendar-alt" aria-hidden="true"></i></button>
                     </li>
-                    <li class="contactSocial flexParent">
+                    <li class="socialBar flexParent flexColumn">
                         <p>Connect on social</p>
-                        <a href="https://twitter.com/KajanthKodes" target="_blank"
-                            aria-label="Go to Kajanth's Twitter Page">
-                            <i class="fab fa-twitter" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/kajanth-kumar/" target="_blank"
-                            aria-label="Go to Kajanth's LinkedIn Page">
-                            <i class="fab fa-linkedin" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://github.com/k22kumar" target="_blank" aria-label="Go to Kajanth's GitHub Page">
-                            <i class="fab fa-github" aria-hidden="true"></i>
-                        </a>
+                        <div class="flexParent connectSocialBar">
+                            <a href="https://twitter.com/KajanthKodes" target="_blank" aria-label="Go to Kajanth's Twitter Page">
+                                <i class="fab fa-twitter" aria-label="Click here to copy to clipboard"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kajanth-kumar/" target="_blank" aria-label="Go to Kajanth's LinkedIn Page">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/k22kumar" target="_blank" aria-label="Go to Kajanth's GitHub Page">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                        </div>
                     </li>
                 </ul>
-                <ul class="contactMessage flexParent">
+                <ul class="contactMessage flexParent flexColumn">
                     <li>
                         <h3>Write a Message</h3>
                     </li>
                     <li>
-                        <form class="flexParent" action="FORMSPREE">
+                        <form class="flexParent flexColumn" action="FORMSPREE">
                             <label class="visuallyHidden" for="name">name</label>
                             <input id="name" name="name" type="text" placeholder="Name" required>
                             <label class="visuallyHidden" for="email">email</label>

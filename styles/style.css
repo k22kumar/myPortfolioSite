@@ -481,6 +481,10 @@ header .aboutMeImage {
   color: black;
 }
 
+.aboutMeContainer {
+  max-width: 600px;
+}
+
 .aboutMeContainer h2 {
   margin-bottom: 5px;
 }
@@ -491,6 +495,7 @@ header .aboutMeImage {
 }
 
 .projectsContainer h3 {
+  font-size: 2.3rem;
   margin-bottom: 30px;
 }
 
@@ -513,7 +518,7 @@ header .aboutMeImage {
       justify-content: space-around;
 }
 
-.projectCard .projectText h3 {
+.projectCard .projectText h3, .projectCard .projectText p {
   text-align: center;
 }
 
@@ -693,10 +698,11 @@ footer a {
 }
 
 footer p + a {
-  padding: 10px;
+  padding: 10px 20px;
   margin: 10px;
   background-color: #C1E0FF;
   color: black;
+  text-decoration: underline;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border-radius: 5px;

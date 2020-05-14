@@ -365,20 +365,20 @@
                         <button id="copyEmail" class="copyEmail" aria-label="Click to copy Kajanth's email"><i class="fas fa-clipboard"
                                 aria-hidden="true"></i></button>
                     </li>
-                    <li class=" contactBooking">
-                        <button id="copyEmail" aria-label="Click to schedule a meeting with Kajanth">Book a meeting<i
+                    <li>
+                        <button id="copyEmail" class=" contactBooking" aria-label="Click to schedule a meeting with Kajanth">Book a meeting<i
                                 class="fas fa-calendar-alt" aria-hidden="true"></i></button>
                     </li>
                     <li class="socialBar flexParent flexColumn">
                         <p>Connect on social</p>
                         <div class="flexParent connectSocialBar">
-                            <a href="https://twitter.com/KajanthKodes" target="_blank" aria-label="Go to Kajanth's Twitter Page">
+                            <a class="flexParent"  href="https://twitter.com/KajanthKodes" target="_blank" aria-label="Go to Kajanth's Twitter Page">
                                 <i class="fab fa-twitter" aria-label="Click here to copy to clipboard"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/kajanth-kumar/" target="_blank" aria-label="Go to Kajanth's LinkedIn Page">
+                            <a class="flexParent" href="https://www.linkedin.com/in/kajanth-kumar/" target="_blank" aria-label="Go to Kajanth's LinkedIn Page">
                                 <i class="fab fa-linkedin" aria-hidden="true"></i>
                             </a>
-                            <a href="https://github.com/k22kumar" target="_blank" aria-label="Go to Kajanth's GitHub Page">
+                            <a class="flexParent" href="https://github.com/k22kumar" target="_blank" aria-label="Go to Kajanth's GitHub Page">
                                 <i class="fab fa-github" aria-hidden="true"></i>
                             </a>
                         </div>
@@ -391,11 +391,11 @@
                     <li>
                         <form class="flexParent flexColumn" action="FORMSPREE">
                             <label class="visuallyHidden" for="name">name</label>
-                            <input id="name" name="name" type="text" placeholder="Name" required>
+                            <input id="name" class="messageName" name="name" type="text" placeholder="Name" required="">
                             <label class="visuallyHidden" for="email">email</label>
-                            <input id="email" name="email" type="text" placeholder="Email" required>
+                            <input id="email" class="messageEmail" name="email" type="text" placeholder="Email" required="">
                             <label class="visuallyHidden" for="message">message</label>
-                            <input id="message" name="message" type="text" placeholder="Message" required>
+                            <textarea name="message" id="message" placeholder="Message" required=""></textarea>
                             <button class="sendMessage" type="submit">Send Message</button>
                         </form>
                     </li>
@@ -404,8 +404,9 @@
         </div>
 
     </main>
-    <footer>
-        <p>Developed by Kajanth Kumar. Design Modifed from <a href="">insert linke here</a></p>
+    <footer class="flexParent flexColumn">
+        <p>&copy; 2020 Coded by Kajanth Kumar. Design Modifed from <a href="https://themeforest.net/item/mcard-material-vcard-cv-resume-personal-template/18333413">Beshleyua</a></p>
+        <a class="viewCode" href="https://github.com/k22kumar/myPortfolioSite">View Code</a>
     </footer>
 
 

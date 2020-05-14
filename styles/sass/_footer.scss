@@ -1,0 +1,21 @@
+footer {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 1.6rem;
+    a {
+        color: white;
+    }
+    p + a {
+        padding: 10px;
+        margin: 10px;
+        background-color: $activeButton;
+        color: $activeFont;
+        transition: all 0.3s;
+        border-radius: 5px;
+        &:hover, &:focus {
+            background-color: $normalButton;
+            color: $normalFont;
+        }
+    }
+}

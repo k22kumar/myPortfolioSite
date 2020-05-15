@@ -3,33 +3,16 @@ const mySite = {}
 
 mySite.init = function() {
     mySite.filter();
+    AOS.init();
 }
 
 mySite.filter = function() {
     //initialize isotope
     let isotopeFilter = $('.skillsContainer').isotope({
         itemSelector: '.skill',
-        layoutMode: 'masonry',
-        // resizable: false,
-        masonry: {
-            columnWidth: 10,
-            // isFitWidth: true
-        }
+        layoutMode: 'fitRows',
     });
-
-    // $(window).smartresize(function () {
-    //     // check if columns has changed
-    //     var currentColumns = Math.floor(($body.width() - 10) / colW);
-    //     if (currentColumns !== columns) {
-    //         // set new column count
-    //         columns = currentColumns;
-    //         // apply width to container manually, then trigger relayout
-    //         $container.width(columns * colW)
-    //             .isotope('reLayout');
-    //     }
-
-    // }).smartresize(); // trigger resize to set container width
-
+    //on click filter the skills via datatype
     $('.skillChoice').on('click', function() {
         const skill = $(this).attr('data-isotope-filter');
         // if all skills is clicked show all else show specific skill
@@ -41,9 +24,8 @@ mySite.filter = function() {
                 filter: `.${skill}`
             });
     });
-
-    
 }
+
 
 
 

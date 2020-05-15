@@ -560,12 +560,8 @@ header .aboutMeImage {
   font-family: "Roboto", sans-serif;
 }
 
-.skillsContainer {
-  padding: 30px 5px;
-}
-
 .skillsSelector {
-  margin-top: 20px;
+  margin-top: 30px;
   width: 100%;
 }
 
@@ -587,9 +583,8 @@ header .aboutMeImage {
 
 .skill {
   width: 100px;
-  margin: 10px 0;
-  left: 50%;
-  margin-left: 50px;
+  margin: 10px 5px;
+  margin-left: 55px;
 }
 
 .skill .iconHolder {

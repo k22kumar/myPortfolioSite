@@ -355,10 +355,10 @@ section {
 
 header {
   height: 40vh;
-  background: #26304a;
-  background: radial-gradient(circle, rgba(38, 48, 74, 0.428992) 0%, #26304a 100%), url("../assets/markus-spiske-qjnAnF0jIGk-unsplash.jpg");
+  background: radial-gradient(circle, rgba(38, 48, 74, 0.428992) 0%, #26304a 100%), url("../assets/markus-spiske-unsplash.jpg");
   background-attachment: fixed;
   background-size: cover;
+  background-position: top;
 }
 
 header nav {
@@ -482,7 +482,7 @@ header .aboutMeImage {
 }
 
 .aboutMeContainer {
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .aboutMeContainer h2 {
@@ -565,6 +565,16 @@ header .aboutMeImage {
   width: 100%;
 }
 
+.skillsSelector .first {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.skillsSelector .last {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 .skillChoice button {
   width: 100px;
   padding: 10px;
@@ -640,6 +650,9 @@ header .aboutMeImage {
 .copyEmail {
   width: 40px;
   height: 40px;
+  margin-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .contactSocial {
@@ -655,7 +668,12 @@ header .aboutMeImage {
 }
 
 .contactSocial .contactEmail p {
-  margin-right: 10px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ebebeb;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .contactSocial .connectSocialBar a {

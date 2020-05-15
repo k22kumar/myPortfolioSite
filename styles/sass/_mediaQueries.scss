@@ -1,48 +1,63 @@
-@media (max-width: 450px){
-    .modalContent {
-        width: 370px;
-        margin-top: 20%;
-        padding: 5px 20px;
-        .closeModal {
-            font-size: 1.8rem;
-        }
-        .modalOption, .modalTitle {
-            font-size: 1.5rem;
-        }
-        .instructionsText {
-            width: 80%;
+@media (max-width: 950px){
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+
+    .landingLowerHalf{
+        .socialBar {
+
+            margin: 15px 0;
         }
     }
 
-    .playArea {
-        .playerInfo, .stealInfo {
-            font-size: 1.8rem;
-            padding: 5px;
-        }
-        .playerInfo {
-            padding: 5px 0 10px 0;
-        }
-        .timeAndBagContainer {
-            height: 40px;
-        }
-        .score {
-            margin: auto;
+    .aboutText {
+        p {
+            font-size: 1.5;
         }
     }
 
-    .gemGallery {
-        width: 100%;
-        .gemButton {
-            width: 87px;
-            height: 87px;
-        }
-        .gem {
-            height: 58px;
-        }
-        .value, .weight {
+    .projectCard {
+        .projectText {
+            .stackTag {
+                font-size: 1.3rem;
+            }
+            
+            .projectDescription {
+                font-size: 1.5rem;
+            }
+            .projectLinks a {
+                font-size: 1.5rem;
+            }
+            }
+    }
+    
+}
+
+@media (max-width: 800px) {
+.contacContainer {
+    h3 {
         font-size: 1.6rem;
     }
-    
+}
+
+.contactEmail p, .socialBar p, .contactSocial a, .contactSocial button, .contactMessage button{
+            font-size: 1.5rem;
     }
-    
+
+    .contactSocial{
+        .connectSocialBar a {
+            font-size: 2rem;
+        }
+    }
+
+    textarea, .messageName, .messageEmail {
+        font-size: 1.4rem;
+    }
+
 }

@@ -49,10 +49,9 @@ function copy(element) {
 
 //upon sucessful submission, reset the form and present a Thank You message
 mySite.formSubmission = function() {
-    $('form').on('submit', function(e) {
-        e.preventDefault();
+    $('form').on('submit', function() {
         $('form').trigger("reset");
-        $('.formTitle').text('Sent, thank you!')
+        $('.formTitle').text('Sent, thank you!');
     })
 }
 

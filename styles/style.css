@@ -632,7 +632,7 @@ header .aboutMeImage {
   font-size: 1.7rem;
 }
 
-.contactSocial a, .contactBooking, .copyEmail, .sendMessage {
+.contactSocial a, .contactBooking a, .copyEmail, .sendMessage {
   padding: 10px;
   margin: 10px;
   background-color: #26304A;
@@ -642,7 +642,7 @@ header .aboutMeImage {
   border-radius: 5px;
 }
 
-.contactSocial a:hover, .contactSocial a:focus, .contactBooking:hover, .contactBooking:focus, .copyEmail:hover, .copyEmail:focus, .sendMessage:hover, .sendMessage:focus {
+.contactSocial a:hover, .contactSocial a:focus, .contactBooking a:hover, .contactBooking a:focus, .copyEmail:hover, .copyEmail:focus, .sendMessage:hover, .sendMessage:focus {
   background-color: #F59C8A;
   color: black;
 }

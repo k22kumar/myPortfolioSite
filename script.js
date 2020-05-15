@@ -5,6 +5,7 @@ mySite.init = function() {
     mySite.filter();
     mySite.copyToClipboard();
     AOS.init();
+    mySite.formSubmission();
 }
 
 mySite.filter = function() {
@@ -46,7 +47,14 @@ function copy(element) {
     $temp.remove();
 }
 
-
+//upon sucessful submission, reset the form and present a Thank You message
+mySite.formSubmission = function() {
+    $('form').on('submit', function(e) {
+        e.preventDefault();
+        $('form').trigger("reset");
+        $('.formTitle').text('Sent, thank you!')
+    })
+}
 
 
 $(document).ready(function() {

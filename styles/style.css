@@ -682,6 +682,10 @@ header .aboutMeImage {
   border-radius: 50%;
 }
 
+.contactSocial .contactBooking {
+  margin: 30px;
+}
+
 .contactSocial .contactBooking i {
   margin-left: 10px;
 }

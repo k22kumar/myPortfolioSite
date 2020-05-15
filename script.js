@@ -3,15 +3,16 @@ const mySite = {}
 
 mySite.init = function() {
     mySite.filter();
+    AOS.init();
 }
 
 mySite.filter = function() {
     //initialize isotope
     let isotopeFilter = $('.skillsContainer').isotope({
         itemSelector: '.skill',
-        layoutMode: 'fitRows'
+        layoutMode: 'fitRows',
     });
-
+    //on click filter the skills via datatype
     $('.skillChoice').on('click', function() {
         const skill = $(this).attr('data-isotope-filter');
         // if all skills is clicked show all else show specific skill
@@ -23,9 +24,8 @@ mySite.filter = function() {
                 filter: `.${skill}`
             });
     });
-
-    
 }
+
 
 
 

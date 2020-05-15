@@ -14,6 +14,8 @@
     <!-- Devicon -->
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Kajanth Kumar</title>
 </head>
 
@@ -81,7 +83,7 @@
 
         <div id="about" class="contentContainer">
             <h2>About Me</h2>
-            <section  class="aboutMeContainer flexParent flexColumn wrapper">
+            <section  class="aboutMeContainer flexParent flexColumn wrapper" data-aos="zoom-in">
                 <div class="aboutText flexColumn">
                     <p>I am a Full Stack Developer from Toronto, Ontario who loves bringing ideas to life. After
                         graduating <span class="textHighlight">Ryerson University</span> with a <span
@@ -102,10 +104,10 @@
             </section>
         </div>
 
-        <div id="projects" class="contentContainer">
+        <div id="projects" class="contentContainer" >
             <h2>Projects</h2>
 
-            <section  class="projectsContainer flexParent flexColumn wrapper">
+            <section  class="projectsContainer flexParent flexColumn wrapper" data-aos="fade-left">
                 <h3>Story Starter</h3>
                 <ul class="projectCard flexParent">
                     <li class="projectImage flexParent">
@@ -131,7 +133,7 @@
                 </ul>
             </section>
 
-            <section class="projectsContainer flexParent flexColumn wrapper">
+            <section class="projectsContainer flexParent flexColumn wrapper" data-aos="fade-right">
                 <h3>Cine Goat</h3>
                 <ul class="projectCard flexParent">
                     <li class="projectText flexParent flexColumn">
@@ -158,7 +160,7 @@
                 </ul>
             </section>
 
-            <section class="projectsContainer flexParent flexColumn wrapper">
+            <section class="projectsContainer flexParent flexColumn wrapper" data-aos="fade-left">
                 <h3>Gem Heist</h3>
                 <ul class="projectCard flexParent">
                     <li class="projectText flexParent flexColumn">
@@ -187,7 +189,7 @@
                 </ul>
             </section>
 
-            <section class="projectsContainer flexParent flexColumn wrapper">
+            <section class="projectsContainer flexParent flexColumn wrapper" data-aos="fade-right">
                 <h3>Potato Head</h3>
                 <ul class="projectCard flexParent">
                     <li class="projectImage flexParent">
@@ -214,7 +216,7 @@
                 </ul>
             </section>
 
-            <section class="projectsContainer flexParent flexColumn wrapper">
+            <section class="projectsContainer flexParent flexColumn wrapper" data-aos="fade-left">
                 <h3>Ecommerce PSD Conversion</h3>
                 <ul class="projectCard flexParent">
                     <li class="projectText flexParent flexColumn">
@@ -242,7 +244,7 @@
 
         <div id="skills"class="contentContainer">
             <h2>Skills</h2>
-            <ul class="skillsSelector flexParent">
+            <ul class="skillsSelector flexParent" data-aos="zoom-in">
                 <li class="skillChoice" data-isotope-filter='*'>
                     <button id="allSkills" aria-label="Click to see all skills">All</button>
                 </li>
@@ -256,7 +258,7 @@
                     <button id="other" aria-label="Click to see Other skills">Other</button>
                 </li>
             </ul>
-            <section class="skillsContainer flexParent wrapper">
+            <section class="skillsContainer flexParent wrapper" data-aos="zoom-in">
                 <ul class="skillGallery">
                     <li class="skill frontend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
@@ -355,7 +357,7 @@
 
         <div id="contact" class="contentContainer">
             <h2>Contact</h2>
-            <section  class="contactContainer flexParent wrapper">
+            <section  class="contactContainer flexParent wrapper" data-aos="zoom-in">
                 <ul class="contactSocial flexParent flexColumn">
                     <li>
                         <h3>Get in touch</h3>
@@ -412,6 +414,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 

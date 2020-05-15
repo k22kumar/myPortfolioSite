@@ -561,7 +561,7 @@ header .aboutMeImage {
 }
 
 .skillsSelector {
-  margin-top: 20px;
+  margin-top: 30px;
   width: 100%;
 }
 
@@ -582,8 +582,9 @@ header .aboutMeImage {
 }
 
 .skill {
-  width: calc(20% - 10px);
+  width: 100px;
   margin: 10px 5px;
+  margin-left: 55px;
 }
 
 .skill .iconHolder {

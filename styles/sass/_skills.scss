@@ -1,6 +1,14 @@
 .skillsSelector {
     margin-top: 30px;
     width: 100%;
+    .first {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .last {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
 }
 
 .skillChoice {

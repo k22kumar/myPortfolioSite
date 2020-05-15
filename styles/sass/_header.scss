@@ -1,9 +1,10 @@
 header {
     height: 40vh;
-    background: rgb(38,48,74);
-    background: radial-gradient(circle, rgba(38,48,74,0.4289915795419731) 0%, rgba(38,48,74,1) 100%), url('../assets/markus-spiske-qjnAnF0jIGk-unsplash.jpg');
+    background: -o-radial-gradient(circle, rgba(38,48,74,0.4289915795419731) 0%, rgba(38,48,74,1) 100%), url('../assets/markus-spiske-unsplash.jpg');
+    background: radial-gradient(circle, rgba(38,48,74,0.4289915795419731) 0%, rgba(38,48,74,1) 100%), url('../assets/markus-spiske-unsplash.jpg');
     background-attachment: fixed;
     background-size: cover;
+    background-position: top;
 
 
     nav {

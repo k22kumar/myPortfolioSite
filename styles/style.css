@@ -628,7 +628,7 @@ header .aboutMeImage {
 }
 
 .contactMessage, .contactSocial {
-  width: calc(50% - 10px);
+  width: calc(50% - 5px);
 }
 
 .contactMessage button, .contactMessage a, .contactSocial button, .contactSocial a {
@@ -744,45 +744,41 @@ footer p + a:hover, footer p + a:focus {
   color: white;
 }
 
-@media (max-width: 450px) {
-  .modalContent {
-    width: 370px;
-    margin-top: 20%;
-    padding: 5px 20px;
+@media (max-width: 950px) {
+  h1 {
+    font-size: 3rem;
   }
-  .modalContent .closeModal {
-    font-size: 1.8rem;
+  h2 {
+    font-size: 2.5rem;
   }
-  .modalContent .modalOption, .modalContent .modalTitle {
+  .landingLowerHalf .socialBar {
+    margin: 15px 0;
+  }
+  .aboutText p {
+    font-size: 1.5;
+  }
+  .projectCard .projectText .stackTag {
+    font-size: 1.3rem;
+  }
+  .projectCard .projectText .projectDescription {
     font-size: 1.5rem;
   }
-  .modalContent .instructionsText {
-    width: 80%;
+  .projectCard .projectText .projectLinks a {
+    font-size: 1.5rem;
   }
-  .playArea .playerInfo, .playArea .stealInfo {
-    font-size: 1.8rem;
-    padding: 5px;
-  }
-  .playArea .playerInfo {
-    padding: 5px 0 10px 0;
-  }
-  .playArea .timeAndBagContainer {
-    height: 40px;
-  }
-  .playArea .score {
-    margin: auto;
-  }
-  .gemGallery {
-    width: 100%;
-  }
-  .gemGallery .gemButton {
-    width: 87px;
-    height: 87px;
-  }
-  .gemGallery .gem {
-    height: 58px;
-  }
-  .gemGallery .value, .gemGallery .weight {
+}
+
+@media (max-width: 800px) {
+  .contacContainer h3 {
     font-size: 1.6rem;
+  }
+  .contactEmail p, .socialBar p, .contactSocial a, .contactSocial button, .contactMessage button {
+    font-size: 1.5rem;
+  }
+  .contactSocial .connectSocialBar a {
+    font-size: 2rem;
+  }
+  textarea, .messageName, .messageEmail {
+    font-size: 1.4rem;
   }
 }

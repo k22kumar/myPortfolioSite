@@ -560,6 +560,10 @@ header .aboutMeImage {
   font-family: "Roboto", sans-serif;
 }
 
+.skillsGallery {
+  position: relative;
+}
+
 .skillsSelector {
   margin-top: 30px;
   width: 100%;

@@ -1,7 +1,9 @@
-.skillsGallery {
-    position: relative;
+.skillsContainer {
+    overflow: hidden;
+    max-width: 700px;
+    margin-top: 20px;
+    padding: 25px;
 }
-
 .skillsSelector {
     margin-top: 30px;
     width: 100%;
@@ -34,7 +36,6 @@
 .skill {
     width: 100px;
     margin: 10px 5px;
-    margin-left: 55px;
     .iconHolder {
         width: 50px;
         height: 60px;

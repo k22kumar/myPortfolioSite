@@ -239,6 +239,7 @@ html {
   background-color: #CBDDEF;
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scrollbar-color: #26304A #fcfcfc;
 }
 
 a {
@@ -314,6 +315,9 @@ section {
 
 .contentContainer {
   padding-top: 70px;
+  margin: 130px auto;
+  width: 90%;
+  border: 13px dashed #3C91E6;
 }
 
 .aboutMeContainer, .projectsContainer, .skillsContainer, .contactContainer {
@@ -365,7 +369,7 @@ header nav {
   width: 100%;
   position: fixed;
   z-index: 2;
-  background-color: black;
+  background-color: #26304A;
 }
 
 header nav ul li {
@@ -421,6 +425,7 @@ header .aboutMeImage {
 }
 
 .landingLowerHalf {
+  max-width: 700px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -453,7 +458,7 @@ header .aboutMeImage {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 30px auto;
+  margin: 15px;
   font-size: 3rem;
   color: black;
 }
@@ -560,8 +565,11 @@ header .aboutMeImage {
   font-family: "Roboto", sans-serif;
 }
 
-.skillsGallery {
-  position: relative;
+.skillsContainer {
+  overflow: hidden;
+  max-width: 700px;
+  margin-top: 20px;
+  padding: 25px;
 }
 
 .skillsSelector {
@@ -598,7 +606,6 @@ header .aboutMeImage {
 .skill {
   width: 100px;
   margin: 10px 5px;
-  margin-left: 55px;
 }
 
 .skill .iconHolder {
@@ -718,7 +725,7 @@ textarea {
 }
 
 footer {
-  background-color: black;
+  background-color: #26304A;
   color: white;
   padding: 15px;
   font-size: 1.6rem;

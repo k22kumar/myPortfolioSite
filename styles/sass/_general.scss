@@ -2,6 +2,7 @@ html {
     background-color: $bgColour;
     font-size: 62.5%;
     scroll-behavior: smooth;
+    scrollbar-color: #26304A #fcfcfc
 }
 
 a{
@@ -74,6 +75,9 @@ section {
 
 .contentContainer {
     padding-top: 70px;
+    margin: 130px auto;
+    width: 90%;
+    border: 13px dashed #3C91E6;
 }
 
 .aboutMeContainer, .projectsContainer, .skillsContainer, .contactContainer {

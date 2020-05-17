@@ -2,17 +2,28 @@
 const mySite = {}
 
 mySite.init = function() {
-    mySite.filter();
+    // mySite.filter();
+    // mySite.shuffle();
     mySite.copyToClipboard();
     AOS.init();
     mySite.formSubmission();
 }
 
+mySite.mixer = mixitup('.skillGallery', {
+    animation: {
+        "duration": 230,
+        "nudge": false,
+        "reverseOut": false,
+        "effects": "fade scale(0.01)",
+        "easing": 'ease-in-out'
+    },
+});
+
 mySite.filter = function() {
     //initialize isotope
     let isotopeFilter = $('.skillsContainer').isotope({
-        itemSelector: '.skill',
         layoutMode: 'fitRows',
+        itemSelector: '.skill',
     });
     //on click filter the skills via datatype
     $('.skillChoice').on('click', function() {
@@ -27,6 +38,9 @@ mySite.filter = function() {
             });
     });
 }
+
+// function using shuffle
+
 
 // function to copy to clip board upon button click
 mySite.copyToClipboard = function() {

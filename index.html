@@ -107,106 +107,106 @@
         <div id="skills" class="contentContainer">
             <h2>Skills</h2>
             <ul class="skillsSelector flexParent" data-aos="zoom-in">
-                <li class="skillChoice" data-isotope-filter='*'>
+                <li class="skillChoice" data-filter="all" data-isotope-filter='*'>
                     <button class="first" aria-label="Click to see all skills">All</button>
                 </li>
-                <li class="skillChoice" data-isotope-filter='frontend'>
+                <li class="skillChoice" data-filter='.frontend' data-isotope-filter='frontend'>
                     <button aria-label="Click to filter by front end skills">Front End</button>
                 </li>
-                <li class="skillChoice" data-isotope-filter='backend'>
+                <li class="skillChoice" data-filter='.backend' data-isotope-filter='backend'>
                     <button aria-label="Click to filter by back end skills">Back End</button>
                 </li>
-                <li class="skillChoice" data-isotope-filter='other'>
+                <li class="skillChoice" data-filter='.other' data-isotope-filter='other'>
                     <button class="last" aria-label="Click to see Other skills">Other</button>
                 </li>
             </ul>
             <section class="skillsContainer flexParent wrapper" data-aos="zoom-in">
-                <ul class="skillGallery">
-                    <li class="skill frontend flexParent flexColumn">
+                <ul class="skillGallery flexParent flexWrap ">
+                    <li class="skill mix frontend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/html-5.svg" alt="html">
                         </div>
                         <p class="toUpper">html5</p>
                     </li>
-                    <li class="skill frontend flexParent flexColumn">
+                    <li class="skill mix frontend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/css-3.svg" alt="css3">
                         </div>
                         <p class="toUpper">css3</p>
                     </li>
-                    <li class="skill frontend flexParent flexColumn">
+                    <li class="skill mix frontend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/sass.svg" alt="sass">
                         </div>
                         <p class="toUpper">sass</p>
                     </li>
-                    <li class="skill frontend flexParent flexColumn">
+                    <li class="skill mix frontend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/javascript.svg" alt="javascript">
                         </div>
                         <p>Java Script</p>
                     </li>
-                    <li class="skill frontend flexParent flexColumn">
+                    <li class="skill mix frontend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <i class="devicon-jquery-plain"></i>
                         </div>
                         <p>jQuery</p>
                     </li>
-                    <li class="skill frontend other flexParent flexColumn">
+                    <li class="skill mix frontend other flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <i aria-label="responsive design" class="fas fa-mobile-alt"></i>
                         </div>
                         <p>Responsive Design</p>
                     </li>
-                    <li class="skill frontend other flexParent flexColumn">
+                    <li class="skill mix frontend other flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <i aria-label="accessibility" class="fas fa-universal-access"></i>
                         </div>
                         <p>Accessibility</p>
                     </li>
-                    <li class="skill frontend flexParent flexColumn">
+                    <li class="skill mix frontend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/react.svg" alt="react">
                         </div>
                         <p>React</p>
                     </li>
-                    <li class="skill frontend backend flexParent flexColumn">
+                    <li class="skill mix frontend backend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/firebase.svg" alt="firebase">
                         </div>
                         <p>Firebase</p>
                     </li>
-                    <li class="skill backend flexParent flexColumn">
+                    <li class="skill mix backend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/mysql.svg" alt="mySQL">
                         </div>
                         <p>mySQL</p>
                     </li>
-                    <li class="skill backend flexParent flexColumn">
+                    <li class="skill mix backend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/oracle.svg" alt="oracle">
                         </div>
                         <p class="toUpper">oracle</p>
                     </li>
-                    <li class="skill backend flexParent flexColumn">
+                    <li class="skill mix backend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/java.svg" alt="java">
                         </div>
                         <p>Java</p>
                     </li>
-                    <li class="skill backend flexParent flexColumn">
+                    <li class="skill mix backend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/c.svg" alt="C">
                         </div>
                         <p class="toUpper">c</p>
                     </li>
-                    <li class="skill other flexParent flexColumn">
+                    <li class="skill mix other flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/visual-studio-code.svg" alt="visual studio code">
                         </div>
                         <p>Visual Studio</p>
                     </li>
-                    <li class="skill other flexParent flexColumn">
+                    <li class="skill mix other flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/eclipse.svg" alt="eclipse">
                         </div>
@@ -422,14 +422,14 @@
     </main>
     <footer class="flexParent flexColumn">
         <p>&copy; 2020 Coded by Kajanth Kumar. Design Modifed from <a
-                href="https://themeforest.net/item/mcard-material-vcard-cv-resume-personal-template/18333413">Beshleyua</a>
+                href="https://themeforest.net/item/mcard-material-vcard-cv-resume-personal-template/18333413">Beshleyua</a>.
         </p>
         <a class="viewCode" href="https://github.com/k22kumar/myPortfolioSite">View Code</a>
     </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>

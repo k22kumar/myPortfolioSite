@@ -5,6 +5,7 @@
 }
 
 .landingLowerHalf {
+    max-width: 700px;
     flex-direction: column;
     h1 {
         font-family: $secondaryFont;
@@ -23,6 +24,12 @@
         }
     }
     .socialBar {
+        
+    width: 40%;
+    justify-content: space-evenly;
+    margin: 15px;
+    font-size: 3rem;
+    color: black;
         li{
             
             border-radius: 50%;
@@ -42,13 +49,6 @@
                     color: $activeFont;
                 }
             }
-
-
         }
-    width: 40%;
-    justify-content: space-evenly;
-    margin: 30px auto;
-   font-size: 3rem;
-   color: black;
 }
 }

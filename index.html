@@ -20,8 +20,8 @@
 </head>
 
 <body>
-    <header>
-        <section class="landingUpperHalf wrapper">
+    <header class="flexParent flexColumn">
+        
             <nav>
                 <ul class="flexParent">
                     <li class="navItem flexParent">
@@ -39,13 +39,6 @@
                     </li>
                 </ul>
             </nav>
-            <div class="aboutMeImage">
-                <img src="./assets/myPicture.jpg" alt="A photo of Kajanth">
-            </div>
-        </section>
-    </header>
-    <main>
-        <div class="landingDivider">
             <section class="landingLowerHalf wrapper flexParent flexColumn">
                 <h1>Kajanth Kumar</h1>
                 <h2>Full Stack Developer</h2>
@@ -69,8 +62,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="flexParent" href="mailto:kajanthkumar@gmail.com" target="_blank"
-                            aria-label="Email Kajanth">
+                        <a class="flexParent" href="mailto:kajanthkumar@gmail.com" target="_blank" aria-label="Email Kajanth">
                             <i class="fas fa-envelope" aria-hidden="true"></i>
                         </a>
                     </li>
@@ -79,134 +71,138 @@
                     <i class="fas fa-chevron-down" aria-hidden="true"></i>
                 </a>
             </section>
-        </div>
+            <ul class="headerBG">
+                <li class="circuitBoard">
+                    <img src="./assets/circuit-board.svg" alt="A circuit board pattern featuring lines and circles">
+                    <img src="./assets/circuit-board.svg" alt="A circuit board pattern featuring lines and circles">
+                </li>
+            </ul>
 
+    </header>
+
+    <main>
         <div id="about" class="contentContainer">
             <h2>About Me</h2>
             <section class="aboutMeContainer flexParent flexColumn wrapper" data-aos="zoom-in">
-                <div class="aboutText flexColumn">
-                    <p>I am a Full Stack Developer from Toronto, Ontario who loves bringing ideas to life. After
-                        graduating <span class="textHighlight">Ryerson University</span> with a <span
-                            class="textHighlight">Computer Science degree</span>, I spent my summer pondering the
-                        possibilities before realizing my passion for Web Development. After completing various courses
-                        at <span class="textHighlight">Juno College</span>, I was hooked and underwent the bootcamp as
-                        well.</p>
-                    <p>I strive to build amazing, accessible experiences for everyone while maintaining clean code.
-                    </p>
-                    <p> When I'm not designing mechanics for my next web game, I love playing board games, video games
-                        and watching superhero flicks with friends!</p>
-                    <div class="flexParent">
-                        <button id="downloadCV" class="aboutButton download"
-                            aria-label="Click to download Kajanth's resume"></button>
-                        <a class="aboutButton aboutContact" aria-label="Click to learn how to contact Kajanth"></a>
-                    </div>
-                </div>
+                    <ul class="flexParent flexColumn">
+                        <li class="aboutMeImage">
+                                <img src="./assets/myPicture.jpg" alt="A photo of Kajanth">
+                        </li>
+                        <li class="aboutText ">
+                            <p>I am a Full Stack Developer from Toronto, with a <span class="textHighlight">Computer Science degree</span> from
+                                <span class="textHighlight">Ryerson University</span>. After discovering my passion for web development, I decided
+                                to pursue it further by studying various courses on 
+                                <span class="textHighlight"><a class="textHighlight" target="_blank" href="https://www.udemy.com/">Udemy</a></span> and graduating Web Dev Immersive Bootcamp at <span class="textHighlight"><a class="textHighlight" target="_blank" href="https://junocollege.com/bootcamp/">Juno College</a></span>.</p>
+                            <p>Outside of coding, I love playing board games, video games
+                                and watching superhero flicks with friends!</p>
+                        </li>
+                    </ul>
             </section>
         </div>
 
         <div id="skills" class="contentContainer">
             <h2>Skills</h2>
             <ul class="skillsSelector flexParent" data-aos="zoom-in">
-                <li class="skillChoice" data-isotope-filter='*'>
+                <li class="skillChoice" data-filter="all" data-isotope-filter='*'>
                     <button class="first" aria-label="Click to see all skills">All</button>
                 </li>
-                <li class="skillChoice" data-isotope-filter='frontend'>
+                <li class="skillChoice" data-filter='.frontend' data-isotope-filter='frontend'>
                     <button aria-label="Click to filter by front end skills">Front End</button>
                 </li>
-                <li class="skillChoice" data-isotope-filter='backend'>
+                <li class="skillChoice" data-filter='.backend' data-isotope-filter='backend'>
                     <button aria-label="Click to filter by back end skills">Back End</button>
                 </li>
-                <li class="skillChoice" data-isotope-filter='other'>
+                <li class="skillChoice" data-filter='.other' data-isotope-filter='other'>
                     <button class="last" aria-label="Click to see Other skills">Other</button>
                 </li>
             </ul>
             <section class="skillsContainer flexParent wrapper" data-aos="zoom-in">
-                <ul class="skillGallery">
-                    <li class="skill frontend flexParent flexColumn">
+                <ul class="skillGallery flexParent flexWrap ">
+                    <li class="skill mix frontend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/html-5.svg" alt="html">
                         </div>
                         <p class="toUpper">html5</p>
                     </li>
-                    <li class="skill frontend flexParent flexColumn">
+                    <li class="skill mix frontend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/css-3.svg" alt="css3">
                         </div>
                         <p class="toUpper">css3</p>
                     </li>
-                    <li class="skill frontend flexParent flexColumn">
+                    <li class="skill mix frontend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/sass.svg" alt="sass">
                         </div>
                         <p class="toUpper">sass</p>
                     </li>
-                    <li class="skill frontend flexParent flexColumn">
+                    <li class="skill mix frontend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/javascript.svg" alt="javascript">
                         </div>
                         <p>Java Script</p>
                     </li>
-                    <li class="skill frontend flexParent flexColumn">
+                    <li class="skill mix frontend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <i class="devicon-jquery-plain"></i>
                         </div>
                         <p>jQuery</p>
                     </li>
-                    <li class="skill frontend other flexParent flexColumn">
+                    <li class="skill mix frontend other flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <i aria-label="responsive design" class="fas fa-mobile-alt"></i>
                         </div>
                         <p>Responsive Design</p>
                     </li>
-                    <li class="skill frontend other flexParent flexColumn">
+                    <li class="skill mix frontend other flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <i aria-label="accessibility" class="fas fa-universal-access"></i>
                         </div>
                         <p>Accessibility</p>
                     </li>
-                    <li class="skill frontend flexParent flexColumn">
+                    <li class="skill mix frontend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/react.svg" alt="react">
                         </div>
                         <p>React</p>
                     </li>
-                    <li class="skill frontend backend flexParent flexColumn">
+                    <li class="skill mix frontend backend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/firebase.svg" alt="firebase">
                         </div>
                         <p>Firebase</p>
                     </li>
-                    <li class="skill backend flexParent flexColumn">
+                    <li class="skill mix backend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/mysql.svg" alt="mySQL">
                         </div>
                         <p>mySQL</p>
                     </li>
-                    <li class="skill backend flexParent flexColumn">
+                    <li class="skill mix backend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/oracle.svg" alt="oracle">
                         </div>
                         <p class="toUpper">oracle</p>
                     </li>
-                    <li class="skill backend flexParent flexColumn">
+                    <li class="skill mix backend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/java.svg" alt="java">
                         </div>
                         <p>Java</p>
                     </li>
-                    <li class="skill backend flexParent flexColumn">
+                    <li class="skill mix backend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/c.svg" alt="C">
                         </div>
                         <p class="toUpper">c</p>
                     </li>
-                    <li class="skill other flexParent flexColumn">
+                    <li class="skill mix other flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/visual-studio-code.svg" alt="visual studio code">
                         </div>
                         <p>Visual Studio</p>
                     </li>
-                    <li class="skill other flexParent flexColumn">
+                    <li class="skill mix other flexParent flexColumn">
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/eclipse.svg" alt="eclipse">
                         </div>
@@ -422,14 +418,14 @@
     </main>
     <footer class="flexParent flexColumn">
         <p>&copy; 2020 Coded by Kajanth Kumar. Design Modifed from <a
-                href="https://themeforest.net/item/mcard-material-vcard-cv-resume-personal-template/18333413">Beshleyua</a>
+                href="https://themeforest.net/item/mcard-material-vcard-cv-resume-personal-template/18333413">Beshleyua</a>.
         </p>
         <a class="viewCode" href="https://github.com/k22kumar/myPortfolioSite">View Code</a>
     </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>

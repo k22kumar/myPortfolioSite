@@ -239,6 +239,8 @@ html {
   background-color: #CBDDEF;
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scrollbar-color: #26304A #fcfcfc;
+  background-color: #cbddef;
 }
 
 a {
@@ -314,6 +316,13 @@ section {
 
 .contentContainer {
   padding-top: 70px;
+  margin: 130px auto;
+  width: 90%;
+  border: 13px dashed #3C91E6;
+}
+
+.contentContainer:nth-child(even) {
+  border: 13px dashed #26304A;
 }
 
 .aboutMeContainer, .projectsContainer, .skillsContainer, .contactContainer {
@@ -353,19 +362,96 @@ section {
   text-transform: uppercase;
 }
 
+@-webkit-keyframes backgroundRun {
+  0% {
+    background-position-y: 300%;
+  }
+  100% {
+    background-position-y: 200%;
+  }
+}
+
+@keyframes backgroundRun {
+  0% {
+    background-position-y: 300%;
+  }
+  100% {
+    background-position-y: 200%;
+  }
+}
+
+@-webkit-keyframes circuitRun {
+  0% {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes circuitRun {
+  0% {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
 header {
-  height: 40vh;
-  background: radial-gradient(circle, rgba(38, 48, 74, 0.428992) 0%, #26304a 100%), url("../assets/markus-spiske-unsplash.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: top;
+  height: 100vh;
+  position: relative;
+}
+
+header .headerBG {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+header .headerBG:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(60, 145, 230, 0.767)), to(#CBDDEF));
+  background: linear-gradient(to bottom, rgba(60, 145, 230, 0.767) 0%, #CBDDEF 100%);
+  z-index: 1;
+}
+
+header .headerBG .circuitBoard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  -webkit-animation: circuitRun 40s linear infinite;
+          animation: circuitRun 40s linear infinite;
+}
+
+header .headerBG .circuitBoard img {
+  max-height: 500%;
+  height: 200%;
+  width: 100;
+  max-width: 500%;
 }
 
 header nav {
   width: 100%;
   position: fixed;
   z-index: 2;
-  background-color: black;
+  background-color: #26304A;
+  top: 0;
 }
 
 header nav ul li {
@@ -402,18 +488,6 @@ header .landingUpperHalf {
   justify-content: center;
 }
 
-header .aboutMeImage {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  position: absolute;
-  left: 50%;
-  margin-left: -75px;
-  bottom: 0;
-  margin-bottom: -75px;
-}
-
 .landingDivider {
   width: 100%;
   height: 60vh;
@@ -421,6 +495,7 @@ header .aboutMeImage {
 }
 
 .landingLowerHalf {
+  max-width: 700px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -453,7 +528,7 @@ header .aboutMeImage {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 30px auto;
+  margin: 15px;
   font-size: 3rem;
   color: black;
 }
@@ -482,7 +557,14 @@ header .aboutMeImage {
 }
 
 .aboutMeContainer {
-  max-width: 800px;
+  max-width: 550px;
+}
+
+.aboutMeContainer .aboutMeImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .aboutMeContainer h2 {
@@ -492,6 +574,10 @@ header .aboutMeImage {
 .aboutMeContainer p {
   text-align: left;
   margin: 10px 0;
+}
+
+.aboutMeContainer .textHighlight a {
+  text-decoration: underline;
 }
 
 .projectsContainer {
@@ -560,8 +646,11 @@ header .aboutMeImage {
   font-family: "Roboto", sans-serif;
 }
 
-.skillsGallery {
-  position: relative;
+.skillsContainer {
+  overflow: hidden;
+  max-width: 700px;
+  margin-top: 20px;
+  padding: 25px;
 }
 
 .skillsSelector {
@@ -598,7 +687,6 @@ header .aboutMeImage {
 .skill {
   width: 100px;
   margin: 10px 5px;
-  margin-left: 55px;
 }
 
 .skill .iconHolder {
@@ -718,7 +806,7 @@ textarea {
 }
 
 footer {
-  background-color: black;
+  background-color: #26304A;
   color: white;
   padding: 15px;
   font-size: 1.6rem;

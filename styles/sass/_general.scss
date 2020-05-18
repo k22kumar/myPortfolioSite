@@ -2,7 +2,8 @@ html {
     background-color: $bgColour;
     font-size: 62.5%;
     scroll-behavior: smooth;
-    scrollbar-color: #26304A #fcfcfc
+    scrollbar-color: $normalButton #fcfcfc;
+    background-color: #cbddef;
 }
 
 a{
@@ -77,7 +78,9 @@ section {
     padding-top: 70px;
     margin: 130px auto;
     width: 90%;
-    border: 13px dashed #3C91E6;
+    border: 13px dashed $accentBlue;
+    &:nth-child(even) {border: 13px dashed $normalButton;}
+    
 }
 
 .aboutMeContainer, .projectsContainer, .skillsContainer, .contactContainer {

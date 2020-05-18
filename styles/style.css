@@ -240,6 +240,7 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   scrollbar-color: #26304A #fcfcfc;
+  background-color: #cbddef;
 }
 
 a {
@@ -320,6 +321,10 @@ section {
   border: 13px dashed #3C91E6;
 }
 
+.contentContainer:nth-child(even) {
+  border: 13px dashed #26304A;
+}
+
 .aboutMeContainer, .projectsContainer, .skillsContainer, .contactContainer {
   padding: 30px 40px;
   margin: 60px auto;
@@ -357,12 +362,88 @@ section {
   text-transform: uppercase;
 }
 
+@-webkit-keyframes backgroundRun {
+  0% {
+    background-position-y: 300%;
+  }
+  100% {
+    background-position-y: 200%;
+  }
+}
+
+@keyframes backgroundRun {
+  0% {
+    background-position-y: 300%;
+  }
+  100% {
+    background-position-y: 200%;
+  }
+}
+
+@-webkit-keyframes circuitRun {
+  0% {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes circuitRun {
+  0% {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
 header {
-  height: 40vh;
-  background: radial-gradient(circle, rgba(38, 48, 74, 0.428992) 0%, #26304a 100%), url("../assets/markus-spiske-unsplash.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: top;
+  height: 100vh;
+  position: relative;
+}
+
+header .headerBG {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+header .headerBG:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(60, 145, 230, 0.767)), to(#CBDDEF));
+  background: linear-gradient(to bottom, rgba(60, 145, 230, 0.767) 0%, #CBDDEF 100%);
+  z-index: 1;
+}
+
+header .headerBG .circuitBoard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  -webkit-animation: circuitRun 40s linear infinite;
+          animation: circuitRun 40s linear infinite;
+}
+
+header .headerBG .circuitBoard img {
+  max-height: 500%;
+  height: 200%;
+  width: 100;
+  max-width: 500%;
 }
 
 header nav {
@@ -370,6 +451,7 @@ header nav {
   position: fixed;
   z-index: 2;
   background-color: #26304A;
+  top: 0;
 }
 
 header nav ul li {
@@ -404,18 +486,6 @@ header .landingUpperHalf {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-header .aboutMeImage {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  position: absolute;
-  left: 50%;
-  margin-left: -75px;
-  bottom: 0;
-  margin-bottom: -75px;
 }
 
 .landingDivider {
@@ -487,7 +557,14 @@ header .aboutMeImage {
 }
 
 .aboutMeContainer {
-  max-width: 800px;
+  max-width: 550px;
+}
+
+.aboutMeContainer .aboutMeImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .aboutMeContainer h2 {
@@ -497,6 +574,10 @@ header .aboutMeImage {
 .aboutMeContainer p {
   text-align: left;
   margin: 10px 0;
+}
+
+.aboutMeContainer .textHighlight a {
+  text-decoration: underline;
 }
 
 .projectsContainer {

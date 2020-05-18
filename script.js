@@ -2,8 +2,6 @@
 const mySite = {}
 
 mySite.init = function() {
-    // mySite.filter();
-    // mySite.shuffle();
     mySite.copyToClipboard();
     AOS.init();
     mySite.formSubmission();
@@ -18,29 +16,6 @@ mySite.mixer = mixitup('.skillGallery', {
         "easing": 'ease-in-out'
     },
 });
-
-mySite.filter = function() {
-    //initialize isotope
-    let isotopeFilter = $('.skillsContainer').isotope({
-        layoutMode: 'fitRows',
-        itemSelector: '.skill',
-    });
-    //on click filter the skills via datatype
-    $('.skillChoice').on('click', function() {
-        const skill = $(this).attr('data-isotope-filter');
-        // if all skills is clicked show all else show specific skill
-        skill === '*' ?
-            isotopeFilter.isotope({
-                filter: skill
-            }) :
-            isotopeFilter.isotope({
-                filter: `.${skill}`
-            });
-    });
-}
-
-// function using shuffle
-
 
 // function to copy to clip board upon button click
 mySite.copyToClipboard = function() {
@@ -68,7 +43,6 @@ mySite.formSubmission = function() {
         $('.formTitle').text('Sent, thank you!');
     })
 }
-
 
 $(document).ready(function() {
     mySite.init();

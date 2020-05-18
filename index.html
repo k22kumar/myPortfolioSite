@@ -20,8 +20,8 @@
 </head>
 
 <body>
-    <header>
-        <section class="landingUpperHalf wrapper">
+    <header class="flexParent flexColumn">
+        
             <nav>
                 <ul class="flexParent">
                     <li class="navItem flexParent">
@@ -39,13 +39,6 @@
                     </li>
                 </ul>
             </nav>
-            <div class="aboutMeImage">
-                <img src="./assets/myPicture.jpg" alt="A photo of Kajanth">
-            </div>
-        </section>
-    </header>
-    <main>
-        <div class="landingDivider">
             <section class="landingLowerHalf wrapper flexParent flexColumn">
                 <h1>Kajanth Kumar</h1>
                 <h2>Full Stack Developer</h2>
@@ -69,8 +62,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="flexParent" href="mailto:kajanthkumar@gmail.com" target="_blank"
-                            aria-label="Email Kajanth">
+                        <a class="flexParent" href="mailto:kajanthkumar@gmail.com" target="_blank" aria-label="Email Kajanth">
                             <i class="fas fa-envelope" aria-hidden="true"></i>
                         </a>
                     </li>
@@ -79,28 +71,32 @@
                     <i class="fas fa-chevron-down" aria-hidden="true"></i>
                 </a>
             </section>
-        </div>
+            <ul class="headerBG">
+                <li class="circuitBoard">
+                    <img src="./assets/circuit-board.svg" alt="A circuit board pattern featuring lines and circles">
+                    <img src="./assets/circuit-board.svg" alt="A circuit board pattern featuring lines and circles">
+                </li>
+            </ul>
 
+    </header>
+
+    <main>
         <div id="about" class="contentContainer">
             <h2>About Me</h2>
             <section class="aboutMeContainer flexParent flexColumn wrapper" data-aos="zoom-in">
-                <div class="aboutText flexColumn">
-                    <p>I am a Full Stack Developer from Toronto, Ontario who loves bringing ideas to life. After
-                        graduating <span class="textHighlight">Ryerson University</span> with a <span
-                            class="textHighlight">Computer Science degree</span>, I spent my summer pondering the
-                        possibilities before realizing my passion for Web Development. After completing various courses
-                        at <span class="textHighlight">Juno College</span>, I was hooked and underwent the bootcamp as
-                        well.</p>
-                    <p>I strive to build amazing, accessible experiences for everyone while maintaining clean code.
-                    </p>
-                    <p> When I'm not designing mechanics for my next web game, I love playing board games, video games
-                        and watching superhero flicks with friends!</p>
-                    <div class="flexParent">
-                        <button id="downloadCV" class="aboutButton download"
-                            aria-label="Click to download Kajanth's resume"></button>
-                        <a class="aboutButton aboutContact" aria-label="Click to learn how to contact Kajanth"></a>
-                    </div>
-                </div>
+                    <ul class="flexParent flexColumn">
+                        <li class="aboutMeImage">
+                                <img src="./assets/myPicture.jpg" alt="A photo of Kajanth">
+                        </li>
+                        <li class="aboutText ">
+                            <p>I am a Full Stack Developer from Toronto, with a <span class="textHighlight">Computer Science degree</span> from
+                                <span class="textHighlight">Ryerson University</span>. After discovering my passion for web development, I decided
+                                to pursue it further by studying various courses on 
+                                <span class="textHighlight"><a class="textHighlight" target="_blank" href="https://www.udemy.com/">Udemy</a></span> and graduating Web Dev Immersive Bootcamp at <span class="textHighlight"><a class="textHighlight" target="_blank" href="https://junocollege.com/bootcamp/">Juno College</a></span>.</p>
+                            <p>Outside of coding, I love playing board games, video games
+                                and watching superhero flicks with friends!</p>
+                        </li>
+                    </ul>
             </section>
         </div>
 

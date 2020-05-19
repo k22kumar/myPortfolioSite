@@ -1,22 +1,10 @@
-@keyframes backgroundRun {
-    0% {
-        background-position-y: 300%;
-    }
-
-
-    100% {
-        background-position-y: 200%;
-    }
-}
-
 @keyframes circuitRun {
     0% {
         transform: translateY(-200%);
     }
 
-
     100% {
-        transform: translateY(00%);
+        transform: translateY(0);
     }
 }
 
@@ -53,7 +41,6 @@ header {
                 
                 max-height: 500%;
                 height: 200%;
-                width: 100;
                 max-width: 500%;
             }
             animation: circuitRun 40s linear infinite;
@@ -100,4 +87,53 @@ header {
         -ms-flex-pack: center;
         justify-content: center;
     }
+}
+
+.titleCard {
+    max-width: 700px;
+    flex-direction: column;
+    h1 {
+        font-family: $secondaryFont;
+        font-size: 4rem;
+        font-weight: 100;
+    }
+    h2 {
+        margin-top: 20px;
+    }
+    .scrollDown {
+        font-size: 3rem;
+        transition: all 0.3s;
+        &:hover, &:focus {
+            scale: 1.2;
+            color: $accent;
+        }
+    }
+    .socialBar {
+        
+    width: 40%;
+    justify-content: space-evenly;
+    margin: 15px;
+    font-size: 3rem;
+    color: black;
+        li{
+            
+            border-radius: 50%;
+            height: 45px;
+            width: 45px;
+            overflow: hidden;
+            a {
+                background-color: $normalButton;
+                width: 100%;
+                height: 100%;
+                font-size: 1.9rem;
+                color: white;
+                transition: all 0.3s;
+                outline: none;
+                &:hover, &:focus {
+                    background-color: $activeButton;
+                    color: $activeFont;
+                }
+            }
+        }
+}
 }

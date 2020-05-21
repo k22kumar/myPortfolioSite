@@ -268,9 +268,9 @@ h1, h2, h3, p {
 }
 
 h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 100;
-  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -282,7 +282,7 @@ h3 {
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.7rem;
   line-height: 1.5;
@@ -319,15 +319,22 @@ section {
 }
 
 .angledDivider {
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  height: 50px;
+  height: 10vw;
+  background-color: #A0C9F3;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+          clip-path: polygon(50% 100%, 0 0, 100% 0);
+  margin-bottom: 50px;
+}
+
+.angledDivider:nth-child(even) {
+  background-color: #CBDDEF;
 }
 
 .contentContainer {
   position: relative;
-  padding: 70px 0;
+  padding: 0;
+  padding-bottom: 30px;
   width: 100%;
 }
 
@@ -337,6 +344,10 @@ section {
 
 .contentContainer:nth-child(even) h2 {
   color: black;
+}
+
+.contentContainer:nth-child(even) .angledDivider {
+  background-color: #CBDDEF;
 }
 
 .aboutMeContainer, .projectsContainer, .skillsContainer, .contactContainer {
@@ -484,6 +495,10 @@ header .landingUpperHalf {
 }
 
 .titleCard {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 255, 255, 0.738683)), to(rgba(60, 145, 230, 0)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.738683) 50%, rgba(60, 145, 230, 0) 100%);
   max-width: 700px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -492,13 +507,14 @@ header .landingUpperHalf {
 }
 
 .titleCard h1 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 7rem;
   font-weight: 100;
 }
 
 .titleCard h2 {
   margin-top: 20px;
+  font-weight: 500;
 }
 
 .titleCard .scrollDown {
@@ -546,7 +562,7 @@ header .landingUpperHalf {
 }
 
 .aboutMeContainer {
-  max-width: 550px;
+  max-width: 519px;
 }
 
 .aboutMeContainer .aboutMeImage {
@@ -575,8 +591,12 @@ header .landingUpperHalf {
 }
 
 .projectsContainer h3 {
-  font-size: 2.3rem;
+  font-size: 2.6rem;
   margin-bottom: 30px;
+}
+
+.lastProject {
+  margin-bottom: 0;
 }
 
 .projectCard {
@@ -637,7 +657,7 @@ header .landingUpperHalf {
 }
 
 .skillsContainer {
-  overflow-x: hidden;
+  overflow: hidden;
   max-width: 700px;
   margin-top: 20px;
   padding: 20px;
@@ -700,10 +720,14 @@ header .landingUpperHalf {
   text-align: center;
 }
 
+.contactContainer {
+  margin-bottom: 30px;
+}
+
 .contactContainer h3 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 100;
-  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.7rem;
 }
 
 .contactMessage, .contactSocial {

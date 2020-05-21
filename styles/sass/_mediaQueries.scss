@@ -65,3 +65,50 @@
 @media (max-width: 710px) {
     
 }
+
+@media (max-width: 550px) {
+
+    .hide {
+        display: none;
+    }
+    .toggleMenu {
+        display: inline-block;
+    }
+
+    .mobileNav {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        ul {
+            height: 70%;
+            -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+            li {
+                a{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    &:hover, &:focus{
+                        background-color:$normalButton;
+                        color: $activeButton;
+                    }
+                }
+                
+            }
+        }
+    }
+    nav {
+        display: none;
+    }
+}

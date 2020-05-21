@@ -21,9 +21,8 @@
 
 <body>
     <header class="flexParent flexColumn">
-
-        <nav>
-            <ul class="flexParent">
+        <nav class="flexParent hide">
+            <ul class="flexParent navMenu">
                 <li class="navItem flexParent">
                     <a href="#about" aria-label="Click to learn more about Kajanth">About</a>
                 </li>
@@ -38,6 +37,9 @@
                 </li>
             </ul>
         </nav>
+        <button id="toggleMenu" class="toggleMenu" aria-label="Click to open menu"><i class="fas fa-bars"
+                aria-hidden="true"></i>
+        </button>
         <section class="titleCard wrapper flexParent flexColumn">
             <h1>Kajanth Kumar</h1>
             <h2>Full Stack Developer</h2>
@@ -108,7 +110,7 @@
             <div class="angledDivider"></div>
             <h2>Skills</h2>
             <ul class="skillsSelector flexParent" data-aos="zoom-in">
-                <li class="skillChoice" data-filter="all" data-isotope-filter='*'>
+                <li class="skillChoice .selectedChoice" data-filter="all" data-isotope-filter='*'>
                     <button class="first" aria-label="Click to see all skills">All</button>
                 </li>
                 <li class="skillChoice" data-filter='.frontend' data-isotope-filter='frontend'>
@@ -422,8 +424,7 @@
 
     </main>
     <footer class="flexParent flexColumn">
-        <p>&copy; 2020 Coded by Kajanth Kumar. Design Modifed from <a
-                href="https://themeforest.net/item/mcard-material-vcard-cv-resume-personal-template/18333413">Beshleyua</a>.
+        <p>&copy; 2020 Designed and Coded by Kajanth Kumar.
         </p>
         <a class="viewCode" target="_blank" href="https://github.com/k22kumar/myPortfolioSite">View Code</a>
     </footer>

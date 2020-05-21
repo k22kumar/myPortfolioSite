@@ -5,6 +5,8 @@ mySite.init = function() {
     mySite.copyToClipboard();
     AOS.init();
     mySite.formSubmission();
+    mySite.hamburgerMenu();
+    mySite.closeMobile(); 
 }
 
 mySite.mixer = mixitup('.skillGallery', {
@@ -43,6 +45,21 @@ mySite.formSubmission = function() {
         $('.formTitle').text('Sent, thank you!');
     })
 }
+
+// function to close hamburger menu when link is clicked
+mySite.hamburgerMenu = function() {
+    $('#toggleMenu').on('click', function () {
+        $('nav').toggleClass('mobileNav hide');
+    });
+}
+
+mySite.closeMobile = function () {
+    $('.navItem a').on('click', function() {
+        console.log('clicked')
+        $('nav').toggleClass('mobileNav hide');
+    })
+}
+
 
 $(document).ready(function() {
     mySite.init();

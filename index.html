@@ -21,9 +21,8 @@
 
 <body>
     <header class="flexParent flexColumn">
-
-        <nav>
-            <ul class="flexParent">
+        <nav class="flexParent hide">
+            <ul class="flexParent navMenu">
                 <li class="navItem flexParent">
                     <a href="#about" aria-label="Click to learn more about Kajanth">About</a>
                 </li>
@@ -38,6 +37,9 @@
                 </li>
             </ul>
         </nav>
+        <button id="toggleMenu" class="toggleMenu" aria-label="Click to open menu"><i class="fas fa-bars"
+                aria-hidden="true"></i>
+        </button>
         <section class="titleCard wrapper flexParent flexColumn">
             <h1>Kajanth Kumar</h1>
             <h2>Full Stack Developer</h2>
@@ -90,15 +92,15 @@
                     <li class="aboutText ">
                         <p>I am a Full Stack Developer from Toronto, with a <span class="textHighlight">Computer Science
                                 degree</span> from
-                            <span class="textHighlight">Ryerson University</span>. After discovering my passion for web
+                            <span class="textHighlight"> <a href="https://www.ryerson.ca/" target="_blank">Ryerson University</a></span>. After discovering my passion for web
                             development, I decided
                             to pursue it further by studying various courses on
                             <span class="textHighlight"><a class="textHighlight" target="_blank"
-                                    href="https://www.udemy.com/">Udemy</a></span> and graduating Web Dev Immersive
+                                    href="https://www.udemy.com/">Udemy</a></span> and graduating from Web Dev Immersive
                             Bootcamp at <span class="textHighlight"><a class="textHighlight" target="_blank"
                                     href="https://junocollege.com/bootcamp/">Juno College</a></span>.</p>
                         <p>Outside of coding, I love playing board games, video games
-                            and watching superhero flicks with friends!</p>
+                            and superhero flicks!</p>
                     </li>
                 </ul>
             </section>
@@ -108,7 +110,7 @@
             <div class="angledDivider"></div>
             <h2>Skills</h2>
             <ul class="skillsSelector flexParent" data-aos="zoom-in">
-                <li class="skillChoice" data-filter="all" data-isotope-filter='*'>
+                <li class="skillChoice .selectedChoice" data-filter="all" data-isotope-filter='*'>
                     <button class="first" aria-label="Click to see all skills">All</button>
                 </li>
                 <li class="skillChoice" data-filter='.frontend' data-isotope-filter='frontend'>
@@ -145,7 +147,7 @@
                         <div class="iconHolder flexParent ">
                             <img src="./assets/skillSVG/javascript.svg" alt="javascript">
                         </div>
-                        <p>Java Script</p>
+                        <p>JavaScript</p>
                     </li>
                     <li class="skill mix frontend flexParent flexColumn">
                         <div class="iconHolder flexParent ">
@@ -218,22 +220,25 @@
             </section>
         </div>
 
-        <div id="projects" class="contentContainer">
+        <div id="projects" class="contentContainer projects">
             <div class="angledDivider"></div>
             <h2>Projects</h2>
             <section class="projectsContainer flexParent flexColumn wrapper" data-aos="fade-left">
                 <h3>Cine Goat</h3>
                 <ul class="projectCard flexParent">
+                    <li class="projectImage flexParent">
+                        <img src="./assets/cineGoatMockUp.png" alt="Screen shot of Cine Goat web site project">
+                    </li>
                     <li class="projectText flexParent flexColumn">
                         <ul class="projectStack flexParent flexWrap">
                             <li class="stackTag">React</li>
                             <li class="stackTag">Firebase</li>
                             <li class="stackTag toUpper">Sass</li>
+                            <li class="stackTag toUpper">css3</li>
                             <li class="stackTag toUpper">api</li>
                             <li class="stackTag toUpper">html</li>
                         </ul>
-                        <p class="projectDescription">React voting app to determine the greatest movie of all time based
-                            on users.</p>
+                        <p class="projectDescription">A React voting app to determine the greatest movie of all time. Users votes are stored in a Firebase database and movies are automagically sorted based on votes!</p>
                         <div class="projectLinks flexParent">
                             <a href="https://k22kumar.github.io/cine-goat/" target="_blank" class="liveLink"
                                 aria-label="Click to view Cine Goat live">Live
@@ -243,15 +248,15 @@
                                 Link</a>
                         </div>
                     </li>
-                    <li class="projectImage flexParent">
-                        <img src="./assets/cineGoatMockUp.png" alt="Screen shot of Cine Goat web site project">
-                    </li>
                 </ul>
             </section>
 
             <section class="projectsContainer flexParent flexColumn wrapper" data-aos="fade-right">
                 <h3>Story Starter</h3>
                 <ul class="projectCard flexParent">
+                    <li class="projectImage flexParent">
+                        <img src="./assets/storyStarterMockUp.png" alt="Screen shot of Story Starter web site project">
+                    </li>
                     <li class="projectText flexParent flexColumn">
                         <ul class="projectStack flexParent flexWrap">
                             <li class="stackTag">React</li>
@@ -261,9 +266,8 @@
                             <li class="stackTag toUpper">css3</li>
                             <li class="stackTag toUpper">html</li>
                         </ul>
-                        <p class="projectDescription">Agency style team-based React project featuring a writing app.
-                            Story Starter keeps you focused with a timer and provides user generated prompts to mitigate
-                            writers' block.</p>
+                        <p class="projectDescription">
+                            A React writing app that keeps you focused with a timer and provides user generated prompts to write about. This agency style project was made with <a href="https://www.robinnong.com/" target="_blank">Robin Nong</a> and <a href="https://shanelbeebe.com/" target="_blank">Shanel Beebe</a>.</p>
                         <div class="projectLinks flexParent">
                             <a href="https://robin-kajanth-shanel.github.io/storystarter/" target="_blank" class="liveLink"
                                 aria-label="Click to view Story Starter live">Live
@@ -272,9 +276,6 @@
                                 aria-label="Click to view Story Starter repository">Repo
                                 Link</a>
                         </div>
-                    </li>
-                    <li class="projectImage flexParent">
-                        <img src="./assets/storyStarterMockUp.png" alt="Screen shot of Story Starter web site project">
                     </li>
                 </ul>
             </section>
@@ -287,16 +288,16 @@
                     </li>
                     <li class="projectText flexParent flexColumn">
                         <ul class="projectStack flexParent flexWrap">
-                            <li class="stackTag">Jquery</li>
-                            <li class="stackTag">Javascript</li>
-                            <li class="stackTag toUpper">Sass</li>
+                            <li class="stackTag">jQuery</li>
+                            <li class="stackTag">JavaScript</li>
+                            <li class="stackTag toUpper">sass</li>
                             <li class="stackTag toUpper">css3</li>
                             <li class="stackTag toUpper">html</li>
                         </ul>
-                        <p class="projectDescription">Jquery gem collecting game based on the <a
+                        <p class="projectDescription">A jQuery gem collecting game based on the <a
                                 href="https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/"
                                 target="_blank">knapsack
-                                problem</a> and Catwoman.</p>
+                                problem</a> and <a href="https://en.wikipedia.org/wiki/Catwoman" target="_blank">Catwoman</a>. Try and steal the most gems you can before times up! Best experienced on mobile.</p>
                         <div class="projectLinks flexParent">
                             <a href="https://k22kumar.github.io/kajanthKumarprojectThree/" target="_blank"
                                 class="liveLink" aria-label="Click to view Gem Heist live">Live
@@ -312,16 +313,18 @@
             <section class="projectsContainer flexParent flexColumn wrapper" data-aos="fade-right">
                 <h3>Potato Head</h3>
                 <ul class="projectCard flexParent">
+                    <li class="projectImage flexParent">
+                        <img src="./assets/potatoHeadMockUp.png" alt="Screen shot of Potato Head web site project">
+                    </li>
                     <li class="projectText flexParent flexColumn">
                         <ul class="projectStack flexParent flexWrap">
-                            <li class="stackTag">Jquery</li>
-                            <li class="stackTag">Javascript</li>
-                            <li class="stackTag toUpper">Sass</li>
+                            <li class="stackTag">jQuery</li>
+                            <li class="stackTag">JavaScript</li>
+                            <li class="stackTag toUpper">sass</li>
                             <li class="stackTag toUpper">css3</li>
                             <li class="stackTag toUpper">html</li>
                         </ul>
-                        <p class="projectDescription">Jquery Potato Head Maker based on the character from Disney.
-                            Create your fully animated and painted pal!</p>
+                        <p class="projectDescription">A Jquery Potato Head Maker based on the character from Disney. All Potato pals created are fully animated and customizable with different body parts and colour combinations!</p>
                         <div class="projectLinks flexParent">
                             <a href="https://k22kumar.github.io/potatoHead/" target="_blank" class="liveLink"
                                 aria-label="Click to view Potato Head live">Live
@@ -331,13 +334,10 @@
                                 Link</a>
                         </div>
                     </li>
-                    <li class="projectImage flexParent">
-                        <img src="./assets/potatoHeadMockUp.png" alt="Screen shot of Potato Head web site project">
-                    </li>
                 </ul>
             </section>
 
-            <section class="projectsContainer lastProject flexParent flexColumn wrapper" data-aos="fade-left">
+            <section class="projectsContainer flexParent flexColumn wrapper" data-aos="fade-left">
                 <h3>Ecommerce PSD Conversion</h3>
                 <ul class="projectCard flexParent">
                     <li class="projectImage flexParent">
@@ -350,7 +350,7 @@
                             <li class="stackTag toUpper">css3</li>
                             <li class="stackTag toUpper">html</li>
                         </ul>
-                        <p class="projectDescription">A PSD conversion for an Ecommerce Site. Fully responsive across
+                        <p class="projectDescription">A PSD conversion for an Ecommerce Site. A great demonstration of my ability to capture your idea and make it fully responsive across
                             all devices.</p>
                         <div class="projectLinks flexParent">
                             <a href="https://k22kumar.github.io/JunoECommerce/" target="_blank" class="liveLink"
@@ -368,62 +368,65 @@
         <div id="contact" class="contentContainer">
             <div class="angledDivider"></div>
             <h2>Contact</h2>
-            <section class="contactContainer flexParent wrapper" data-aos="zoom-in">
-                <ul class="contactSocial flexParent flexColumn">
-                    <li>
-                        <h3>Get in touch</h3>
-                    </li>
-                    <li class="flexParent contactEmail">
-                        <p class="flexParent">kajanthkumar@gmail.com</p>
-                        <button id="copyEmail" class="copyEmail" aria-label="Click to copy Kajanth's email"><i
-                                class="fas fa-clipboard" aria-hidden="true"></i></button>
-                    </li>
-                    <li class=" contactBooking">
-                        <a href="https://calendly.com/kajanthkumar" id="copyEmail"
-                            aria-label="Click to schedule a meeting with Kajanth">Book a meeting<i
-                                class="fas fa-calendar-alt" aria-hidden="true"></i></a>
-                    </li>
-                    <li class="socialBar flexParent flexColumn">
-                        <p>Connect on social</p>
-                        <div class="flexParent connectSocialBar">
-                            <a class="flexParent" href="https://twitter.com/KajanthKodes" target="_blank"
-                                aria-label="Go to Kajanth's Twitter Page">
-                                <i class="fab fa-twitter" aria-label="Click here to copy to clipboard"></i>
-                            </a>
-                            <a class="flexParent" href="https://www.linkedin.com/in/kajanth-kumar/" target="_blank"
-                                aria-label="Go to Kajanth's LinkedIn Page">
-                                <i class="fab fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                            <a class="flexParent" href="https://github.com/k22kumar" target="_blank"
-                                aria-label="Go to Kajanth's GitHub Page">
-                                <i class="fab fa-github" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="contactMessage flexParent flexColumn">
-                    <li>
-                        <h3 class="formTitle">Message Me</h3>
-                    </li>
-                    <li>
-                        <form class="flexParent flexColumn" action="https://formspree.io/mqkyarvd" method="POST">
-                            <label class="visuallyHidden" for="name">name</label>
-                            <input class="messageName" name="name" type="text" placeholder="Name" required="">
-                            <label class="visuallyHidden" for="email">email</label>
-                            <input class="messageEmail" name="email" type="text" placeholder="Email" required="">
-                            <label class="visuallyHidden" for="message">message</label>
-                            <textarea name="message" placeholder="Message" required=""></textarea>
-                            <button class="sendMessage" type="submit">Send Message</button>
-                        </form>
-                    </li>
-                </ul>
-            </section>
+            <div class="flexParent contactContainer wrapper">
+                <section class="contactSocial flexParent" data-aos="fade-right">
+                    <ul class="flexParent flexColumn">
+                        <li>
+                            <h3>Get in touch</h3>
+                        </li>
+                        <li class="flexParent contactEmail">
+                            <p class="flexParent">kajanthkumar@gmail.com</p>
+                            <button id="copyEmail" class="copyEmail flexParent" aria-label="Click to copy Kajanth's email"><i
+                                    class="fas fa-clipboard" aria-hidden="true"></i></button>
+                        </li>
+                        <li class=" contactBooking">
+                            <a href="https://calendly.com/kajanthkumar" id="copyEmail"
+                                aria-label="Click to schedule a meeting with Kajanth">Book a meeting<i class="fas fa-calendar-alt"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li class="socialBar flexParent flexColumn">
+                            <p>Connect on social</p>
+                            <div class="flexParent connectSocialBar">
+                                <a class="flexParent" href="https://twitter.com/KajanthKodes" target="_blank"
+                                    aria-label="Go to Kajanth's Twitter Page">
+                                    <i class="fab fa-twitter" aria-label="Click here to copy to clipboard"></i>
+                                </a>
+                                <a class="flexParent" href="https://www.linkedin.com/in/kajanth-kumar/" target="_blank"
+                                    aria-label="Go to Kajanth's LinkedIn Page">
+                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                                <a class="flexParent" href="https://github.com/k22kumar" target="_blank"
+                                    aria-label="Go to Kajanth's GitHub Page">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="contactMessage flexParent" data-aos="fade-left">
+                    <ul class="flexParent flexColumn">
+                        <li>
+                            <h3 class="formTitle">Message Me</h3>
+                        </li>
+                        <li>
+                            <form class="flexParent flexColumn" action="https://formspree.io/mqkyarvd" method="POST">
+                                <label class="visuallyHidden" for="name">name</label>
+                                <input class="messageName" name="name" type="text" placeholder="Name" required="">
+                                <label class="visuallyHidden" for="email">email</label>
+                                <input class="messageEmail" name="email" type="text" placeholder="Email" required="">
+                                <label class="visuallyHidden" for="message">message</label>
+                                <textarea name="message" placeholder="Message" required=""></textarea>
+                                <button class="sendMessage" type="submit">Send Message</button>
+                            </form>
+                        </li>
+                    </ul>
+                </section>
+            </div>
         </div>
 
     </main>
     <footer class="flexParent flexColumn">
-        <p>&copy; 2020 Coded by Kajanth Kumar. Design Modifed from <a
-                href="https://themeforest.net/item/mcard-material-vcard-cv-resume-personal-template/18333413">Beshleyua</a>.
+        <p>&copy; 2020 Designed and Coded by Kajanth Kumar.
         </p>
         <a class="viewCode" target="_blank" href="https://github.com/k22kumar/myPortfolioSite">View Code</a>
     </footer>

@@ -1,18 +1,14 @@
 @media (max-width: 950px){
-
     h1 {
+        font-size: 5rem;
+    }
+    h2 {
         font-size: 3rem;
     }
 
-    h2 {
-        font-size: 2.5rem;
-    }
-    
-
-    .landingLowerHalf{
+    .titleCard {
         .socialBar {
-
-            margin: 15px 0;
+            width: 60%;
         }
     }
 
@@ -40,9 +36,24 @@
 }
 
 @media (max-width: 800px) {
-.contacContainer {
-    h3 {
-        font-size: 1.6rem;
+    p {
+        font-size: 1.5rem;
+    }
+
+    .titleCard {
+        .socialBar {
+            width: 80%;
+        }
+    }
+
+    .skillsSelector {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contactContainer {
+        h3 {
+            font-size: 2.6rem;
     }
 }
 
@@ -62,6 +73,150 @@
 
 }
 
-@media (max-width: 710px) {
+@media (max-width: 760px) {
     
+    .projectCard {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+    .projectImage, .projectText {
+        width: 80%;
+    }
+
+    .projectImage{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    }
+
+    .projects section:nth-child(2n) .projectCard {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }
+    .contactSocial, .contactMessage {
+        width: 100%;
+    }
+    .contactSocial {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 550px) {
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .titleCard {
+        .socialBar {
+            width: 100%;
+        }
+    }
+
+    .hide {
+        display: none;
+    }
+    .toggleMenu {
+        display: inline-block;
+    }
+
+    .mobileNav {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        ul {
+            height: 70%;
+            -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+            li {
+                a{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    &:hover, &:focus{
+                        background-color:$normalButton;
+                        color: $activeButton;
+                    }
+                }
+                
+            }
+        }
+    }
+    nav {
+        display: none;
+    }
+
+    .skillChoice{
+        width: 25%;
+        button {
+            width: 100%;
+        }
+    }
+
+    .skill {
+        width: 90px;
+        margin: 7px 5px;
+    }
+
+    .projectsContainer {
+        padding: 20px;
+    }
+
+    .projectImage, .projectText {
+        width: 90%;
+    }
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 2rem
+    }
+
+    .skillChoice{
+        width: 25%;
+        button {
+            width: 100%;
+            padding: 6px 4px;
+            font-size: 1.4rem;
+        }
+    }
 }

@@ -46,46 +46,44 @@ header {
             animation: circuitRun 40s linear infinite;
         }
     }
-    
-    nav {
+}
+
+nav {
         width: 100%;
         position: fixed;
         z-index: 2;
         background-color: $normalButton;
         top: 0;
+        transition: all 0.3s ease-in-out;
     }
-     nav ul{
+nav ul{
 
-        li {
-            height: 100%;
-        }
-
-        li a{   
-            color: white;
-            transition: all 0.3s;
-            height: 100%;
-            padding: 10px 20px;
-            font-size: 2.4rem;
-            &:hover, &:focus{
-                background-color: $activeButton;
-                color: $activeFont;
-            }
-        }
-    }
-
-     .landingUpperHalf {
-         background-color: transparent;
-        width: 100%;
+    li {
         height: 100%;
-        position: relative;
-        box-shadow: none;
-        padding: 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
+    }
+
+    li a{   
+        color: white;
+        transition: all 0.3s;
+        height: 100%;
+        padding: 10px 20px;
+        font-size: 2.4rem;
+        &:hover, &:focus{
+            background-color: $activeButton;
+            color: $activeFont;
+        }
+    }
+}
+
+.toggleMenu {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+    i {
+        font-size: 5rem;
+        color: white;
     }
 }
 
@@ -94,11 +92,6 @@ header {
     background: linear-gradient(180deg, rgba(255,255,255,0.7386834562926733) 50%, rgba(60,145,230,0) 100%);
     max-width: 700px;
     flex-direction: column;
-    h1 {
-        font-family: $secondaryFont;
-        font-size: 7rem;
-        font-weight: 100;
-    }
     h2 {
         margin-top: 20px;
         font-weight: 500;

@@ -77,6 +77,10 @@
 
 
 textarea, .messageName, .messageEmail{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
     font-size: 1.6rem;
     width: 100%;
     padding: 10px;

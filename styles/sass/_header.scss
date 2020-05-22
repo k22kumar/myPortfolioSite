@@ -97,11 +97,30 @@ nav ul{
         font-weight: 500;
     }
     .scrollDown {
-        font-size: 3rem;
+        width: 45px;
+        height: 54px;
+        position: relative;
+        font-size: 3.2rem;
         transition: all 0.3s;
+        border: 2px solid $normalButton;
+        border-radius: 20px;
         &:hover, &:focus {
-            scale: 1.2;
             color: $accent;
+        }
+
+        @keyframes bounce {
+            40% {transform:translatey(0)}
+            80%{transform:translatey(10px)}
+            100%{transform:translatey(0)}
+        }
+
+        i {
+            animation: bounce 1.55s cubic-bezier(.49,-0.26,.5,.86) infinite;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            margin-left: -14px;
+            margin-top: -16px;
         }
     }
     .socialBar {

@@ -38,14 +38,6 @@ function copy(element) {
     $temp.remove();
 }
 
-//upon sucessful submission, reset the form and present a Thank You message
-mySite.formSubmission = function() {
-    $('form').on('submit', function() {
-        $('form').trigger("reset");
-        $('.formTitle').text('Sent, thank you!');
-    })
-}
-
 // function to close hamburger menu when link is clicked
 mySite.hamburgerMenu = function() {
     $('#toggleMenu').on('click', function () {

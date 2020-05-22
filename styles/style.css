@@ -477,7 +477,7 @@ nav ul li a {
 
 nav ul li a:hover, nav ul li a:focus {
   background-color: #F59C8A;
-  color: #F59C8A;
+  color: black;
 }
 
 .toggleMenu {
@@ -584,6 +584,14 @@ nav ul li a:hover, nav ul li a:focus {
   text-decoration: underline;
 }
 
+.projects section:first-of-type {
+  margin-top: 0;
+}
+
+.projects section:last-of-type {
+  margin-bottom: 0;
+}
+
 .projectsContainer {
   margin: 60px auto;
   padding: 50px 40px;
@@ -592,10 +600,6 @@ nav ul li a:hover, nav ul li a:focus {
 .projectsContainer h3 {
   font-size: 2.6rem;
   margin-bottom: 30px;
-}
-
-.lastProject {
-  margin-bottom: 0;
 }
 
 .projectCard {
@@ -631,7 +635,7 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 .projectCard .projectText .liveLink, .projectCard .projectText .repoLink {
-  padding: 10px;
+  padding: 10px 15px;
   margin: 10px;
   background-color: #26304A;
   color: white;
@@ -739,7 +743,7 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 .contactSocial a, .contactBooking a, .copyEmail, .sendMessage {
-  padding: 10px;
+  padding: 10px 15px;
   margin: 10px;
   background-color: #26304A;
   color: white;
@@ -775,8 +779,8 @@ nav ul li a:hover, nav ul li a:focus {
 
 .contactSocial .contactEmail p {
   height: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: #ebebeb;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -851,7 +855,7 @@ footer p + a:hover, footer p + a:focus {
     font-size: 3rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   .landingLowerHalf .socialBar {
     margin: 15px 0;

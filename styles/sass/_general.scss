@@ -41,6 +41,7 @@ h2 {
     font-size: 4rem;
     text-align: center;
     margin-bottom: 30px;
+    padding-top: 55px;
 }
 
 h3 {
@@ -93,7 +94,6 @@ section {
         &:nth-child(even) {
             background-color: $bgColour;
         }
-        margin-bottom: 50px;
     }
 
 .contentContainer {

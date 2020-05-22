@@ -145,9 +145,6 @@
         }
     }
 
-    .hide {
-        transform: translateY(-100%);
-    }
     .toggleMenu {
         display: inline-block;
     }
@@ -156,7 +153,7 @@
         transform: translateY(0%);
     }
     nav {
-        
+        transform: translateY(-100%);
         position: fixed;
         top: 0;
         bottom: 0;

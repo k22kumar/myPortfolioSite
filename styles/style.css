@@ -279,6 +279,7 @@ h2 {
   font-size: 4rem;
   text-align: center;
   margin-bottom: 30px;
+  padding-top: 55px;
 }
 
 h3 {
@@ -330,7 +331,6 @@ section {
   background-color: #A0C9F3;
   -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
           clip-path: polygon(50% 100%, 0 0, 100% 0);
-  margin-bottom: 50px;
 }
 
 .angledDivider:nth-child(even) {
@@ -512,6 +512,7 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 .titleCard h2 {
+  padding-top: 0;
   margin-top: 20px;
   font-weight: 500;
 }

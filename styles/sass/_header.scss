@@ -54,7 +54,7 @@ nav {
         z-index: 2;
         background-color: $normalButton;
         top: 0;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.3s cubic-bezier(.88,-0.36,.11,.9);
     }
 nav ul{
 

@@ -47,7 +47,7 @@ mySite.hamburgerMenu = function() {
 mySite.closeMobile = function () {
     $('.navItem a').on('click', function() {
         console.log('clicked')
-        $('nav').toggleClass('mobileNav hide');
+        $('nav').toggleClass('mobileNav');
     })
 }
 

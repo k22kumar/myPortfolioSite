@@ -1010,10 +1010,6 @@ footer p + a:hover, footer p + a:focus {
   .titleCard .socialBar {
     width: 100%;
   }
-  .hide {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
   .toggleMenu {
     display: inline-block;
   }
@@ -1022,6 +1018,8 @@ footer p + a:hover, footer p + a:focus {
             transform: translateY(0%);
   }
   nav {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
     position: fixed;
     top: 0;
     bottom: 0;

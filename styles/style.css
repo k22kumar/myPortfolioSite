@@ -464,8 +464,8 @@ nav {
   z-index: 2;
   background-color: #26304A;
   top: 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s cubic-bezier(0.88, -0.36, 0.11, 0.9);
+  transition: all 0.3s cubic-bezier(0.88, -0.36, 0.11, 0.9);
 }
 
 nav ul li {

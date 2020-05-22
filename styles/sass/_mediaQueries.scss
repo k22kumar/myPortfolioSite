@@ -74,6 +74,14 @@
 }
 
 @media (max-width: 760px) {
+
+    header {
+        .headerBG {
+            .circuitBoard {
+                width: 200%;
+            }
+        }
+    }
     
     .projectCard {
     height: auto;
@@ -138,13 +146,17 @@
     }
 
     .hide {
-        display: none;
+        transform: translateY(-100%);
     }
     .toggleMenu {
         display: inline-block;
     }
 
     .mobileNav {
+        transform: translateY(0%);
+    }
+    nav {
+        
         position: fixed;
         top: 0;
         bottom: 0;
@@ -177,9 +189,6 @@
             }
         }
     }
-    nav {
-        display: none;
-    }
 
     .skillChoice{
         width: 25%;
@@ -197,8 +206,10 @@
         padding: 20px;
     }
 
-    .projectImage, .projectText {
-        width: 90%;
+    .projectCard {
+        .projectImage, .projectText {
+            width: 100%;
+        }
     }
 }
 

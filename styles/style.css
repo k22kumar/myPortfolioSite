@@ -517,14 +517,58 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 .titleCard .scrollDown {
-  font-size: 3rem;
+  width: 45px;
+  height: 54px;
+  position: relative;
+  font-size: 3.2rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  border: 2px solid #26304A;
+  border-radius: 20px;
 }
 
 .titleCard .scrollDown:hover, .titleCard .scrollDown:focus {
-  scale: 1.2;
   color: #F0816A;
+}
+
+@-webkit-keyframes bounce {
+  40% {
+    -webkit-transform: translatey(0);
+            transform: translatey(0);
+  }
+  80% {
+    -webkit-transform: translatey(10px);
+            transform: translatey(10px);
+  }
+  100% {
+    -webkit-transform: translatey(0);
+            transform: translatey(0);
+  }
+}
+
+@keyframes bounce {
+  40% {
+    -webkit-transform: translatey(0);
+            transform: translatey(0);
+  }
+  80% {
+    -webkit-transform: translatey(10px);
+            transform: translatey(10px);
+  }
+  100% {
+    -webkit-transform: translatey(0);
+            transform: translatey(0);
+  }
+}
+
+.titleCard .scrollDown i {
+  -webkit-animation: bounce 1.55s cubic-bezier(0.49, -0.26, 0.5, 0.86) infinite;
+          animation: bounce 1.55s cubic-bezier(0.49, -0.26, 0.5, 0.86) infinite;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  margin-left: -14px;
+  margin-top: -16px;
 }
 
 .titleCard .socialBar {
@@ -913,6 +957,9 @@ footer p + a:hover, footer p + a:focus {
 }
 
 @media (max-width: 760px) {
+  header .headerBG .circuitBoard {
+    width: 200%;
+  }
   .projectCard {
     height: auto;
     -webkit-box-orient: vertical;
@@ -964,26 +1011,31 @@ footer p + a:hover, footer p + a:focus {
     width: 100%;
   }
   .hide {
-    display: none;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
   .toggleMenu {
     display: inline-block;
   }
   .mobileNav {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  nav {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
   }
-  .mobileNav ul {
+  nav ul {
     height: 70%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .mobileNav ul li a {
+  nav ul li a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -994,12 +1046,9 @@ footer p + a:hover, footer p + a:focus {
     -ms-flex-align: center;
     align-items: center;
   }
-  .mobileNav ul li a:hover, .mobileNav ul li a:focus {
+  nav ul li a:hover, nav ul li a:focus {
     background-color: #26304A;
     color: #F59C8A;
-  }
-  nav {
-    display: none;
   }
   .skillChoice {
     width: 25%;
@@ -1014,8 +1063,8 @@ footer p + a:hover, footer p + a:focus {
   .projectsContainer {
     padding: 20px;
   }
-  .projectImage, .projectText {
-    width: 90%;
+  .projectCard .projectImage, .projectCard .projectText {
+    width: 100%;
   }
 }
 

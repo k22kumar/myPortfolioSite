@@ -1,18 +1,14 @@
 @media (max-width: 950px){
-
     h1 {
-        font-size: 3rem;
+        font-size: 5rem;
     }
-
     h2 {
         font-size: 3rem;
     }
-    
 
-    .landingLowerHalf{
+    .titleCard {
         .socialBar {
-
-            margin: 15px 0;
+            width: 60%;
         }
     }
 
@@ -40,9 +36,19 @@
 }
 
 @media (max-width: 800px) {
-.contacContainer {
+    p {
+        font-size: 1.5rem;
+    }
+
+    .titleCard {
+        .socialBar {
+            width: 80%;
+        }
+    }
+
+.contactContainer {
     h3 {
-        font-size: 1.6rem;
+        font-size: 2.6rem;
     }
 }
 
@@ -62,11 +68,53 @@
 
 }
 
-@media (max-width: 710px) {
+@media (max-width: 760px) {
     
+
+    .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }
+    .contactSocial, .contactMessage {
+        width: 100%;
+    }
+}
+
+@media (max-width: 670px) {
+    .projectCard {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: auto;
+    }
 }
 
 @media (max-width: 550px) {
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .titleCard {
+        .socialBar {
+            width: 100%;
+        }
+    }
 
     .hide {
         display: none;
@@ -110,5 +158,41 @@
     }
     nav {
         display: none;
+    }
+
+    .skillsSelector {
+        width: 90%;
+        margin: auto;
+    }
+
+    .skillChoice{
+        width: 25%;
+        button {
+            width: 100%;
+        }
+    }
+
+    .skill {
+        width: 90px;
+        margin: 7px 5px;
+    }
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 2rem
+    }
+
+    .skillChoice{
+        width: 25%;
+        button {
+            width: 100%;
+            padding: 6px 4px;
+            font-size: 1.4rem;
+        }
     }
 }

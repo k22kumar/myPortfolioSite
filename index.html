@@ -226,6 +226,9 @@
             <section class="projectsContainer flexParent flexColumn wrapper" data-aos="fade-left">
                 <h3>Cine Goat</h3>
                 <ul class="projectCard flexParent">
+                    <li class="projectImage flexParent">
+                        <img src="./assets/cineGoatMockUp.png" alt="Screen shot of Cine Goat web site project">
+                    </li>
                     <li class="projectText flexParent flexColumn">
                         <ul class="projectStack flexParent flexWrap">
                             <li class="stackTag">React</li>
@@ -244,15 +247,15 @@
                                 Link</a>
                         </div>
                     </li>
-                    <li class="projectImage flexParent">
-                        <img src="./assets/cineGoatMockUp.png" alt="Screen shot of Cine Goat web site project">
-                    </li>
                 </ul>
             </section>
 
             <section class="projectsContainer flexParent flexColumn wrapper" data-aos="fade-right">
                 <h3>Story Starter</h3>
                 <ul class="projectCard flexParent">
+                    <li class="projectImage flexParent">
+                        <img src="./assets/storyStarterMockUp.png" alt="Screen shot of Story Starter web site project">
+                    </li>
                     <li class="projectText flexParent flexColumn">
                         <ul class="projectStack flexParent flexWrap">
                             <li class="stackTag">React</li>
@@ -272,9 +275,6 @@
                                 aria-label="Click to view Story Starter repository">Repo
                                 Link</a>
                         </div>
-                    </li>
-                    <li class="projectImage flexParent">
-                        <img src="./assets/storyStarterMockUp.png" alt="Screen shot of Story Starter web site project">
                     </li>
                 </ul>
             </section>
@@ -312,6 +312,9 @@
             <section class="projectsContainer flexParent flexColumn wrapper" data-aos="fade-right">
                 <h3>Potato Head</h3>
                 <ul class="projectCard flexParent">
+                    <li class="projectImage flexParent">
+                        <img src="./assets/potatoHeadMockUp.png" alt="Screen shot of Potato Head web site project">
+                    </li>
                     <li class="projectText flexParent flexColumn">
                         <ul class="projectStack flexParent flexWrap">
                             <li class="stackTag">jQuery</li>
@@ -329,9 +332,6 @@
                                 aria-label="Click to view Potato Head repository">Repo
                                 Link</a>
                         </div>
-                    </li>
-                    <li class="projectImage flexParent">
-                        <img src="./assets/potatoHeadMockUp.png" alt="Screen shot of Potato Head web site project">
                     </li>
                 </ul>
             </section>
@@ -367,56 +367,60 @@
         <div id="contact" class="contentContainer">
             <div class="angledDivider"></div>
             <h2>Contact</h2>
-            <section class="contactContainer flexParent wrapper" data-aos="zoom-in">
-                <ul class="contactSocial flexParent flexColumn">
-                    <li>
-                        <h3>Get in touch</h3>
-                    </li>
-                    <li class="flexParent contactEmail">
-                        <p class="flexParent">kajanthkumar@gmail.com</p>
-                        <button id="copyEmail" class="copyEmail" aria-label="Click to copy Kajanth's email"><i
-                                class="fas fa-clipboard" aria-hidden="true"></i></button>
-                    </li>
-                    <li class=" contactBooking">
-                        <a href="https://calendly.com/kajanthkumar" id="copyEmail"
-                            aria-label="Click to schedule a meeting with Kajanth">Book a meeting<i
-                                class="fas fa-calendar-alt" aria-hidden="true"></i></a>
-                    </li>
-                    <li class="socialBar flexParent flexColumn">
-                        <p>Connect on social</p>
-                        <div class="flexParent connectSocialBar">
-                            <a class="flexParent" href="https://twitter.com/KajanthKodes" target="_blank"
-                                aria-label="Go to Kajanth's Twitter Page">
-                                <i class="fab fa-twitter" aria-label="Click here to copy to clipboard"></i>
-                            </a>
-                            <a class="flexParent" href="https://www.linkedin.com/in/kajanth-kumar/" target="_blank"
-                                aria-label="Go to Kajanth's LinkedIn Page">
-                                <i class="fab fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                            <a class="flexParent" href="https://github.com/k22kumar" target="_blank"
-                                aria-label="Go to Kajanth's GitHub Page">
-                                <i class="fab fa-github" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="contactMessage flexParent flexColumn">
-                    <li>
-                        <h3 class="formTitle">Message Me</h3>
-                    </li>
-                    <li>
-                        <form class="flexParent flexColumn" action="https://formspree.io/mqkyarvd" method="POST">
-                            <label class="visuallyHidden" for="name">name</label>
-                            <input class="messageName" name="name" type="text" placeholder="Name" required="">
-                            <label class="visuallyHidden" for="email">email</label>
-                            <input class="messageEmail" name="email" type="text" placeholder="Email" required="">
-                            <label class="visuallyHidden" for="message">message</label>
-                            <textarea name="message" placeholder="Message" required=""></textarea>
-                            <button class="sendMessage" type="submit">Send Message</button>
-                        </form>
-                    </li>
-                </ul>
-            </section>
+            <div class="flexParent contactContainer wrapper">
+                <section class="contactSocial flexParent" data-aos="fade-right">
+                    <ul class="flexParent flexColumn">
+                        <li>
+                            <h3>Get in touch</h3>
+                        </li>
+                        <li class="flexParent contactEmail">
+                            <p class="flexParent">kajanthkumar@gmail.com</p>
+                            <button id="copyEmail" class="copyEmail flexParent" aria-label="Click to copy Kajanth's email"><i
+                                    class="fas fa-clipboard" aria-hidden="true"></i></button>
+                        </li>
+                        <li class=" contactBooking">
+                            <a href="https://calendly.com/kajanthkumar" id="copyEmail"
+                                aria-label="Click to schedule a meeting with Kajanth">Book a meeting<i class="fas fa-calendar-alt"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li class="socialBar flexParent flexColumn">
+                            <p>Connect on social</p>
+                            <div class="flexParent connectSocialBar">
+                                <a class="flexParent" href="https://twitter.com/KajanthKodes" target="_blank"
+                                    aria-label="Go to Kajanth's Twitter Page">
+                                    <i class="fab fa-twitter" aria-label="Click here to copy to clipboard"></i>
+                                </a>
+                                <a class="flexParent" href="https://www.linkedin.com/in/kajanth-kumar/" target="_blank"
+                                    aria-label="Go to Kajanth's LinkedIn Page">
+                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                                <a class="flexParent" href="https://github.com/k22kumar" target="_blank"
+                                    aria-label="Go to Kajanth's GitHub Page">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="contactMessage flexParent" data-aos="fade-left">
+                    <ul class="flexParent flexColumn">
+                        <li>
+                            <h3 class="formTitle">Message Me</h3>
+                        </li>
+                        <li>
+                            <form class="flexParent flexColumn" action="https://formspree.io/mqkyarvd" method="POST">
+                                <label class="visuallyHidden" for="name">name</label>
+                                <input class="messageName" name="name" type="text" placeholder="Name" required="">
+                                <label class="visuallyHidden" for="email">email</label>
+                                <input class="messageEmail" name="email" type="text" placeholder="Email" required="">
+                                <label class="visuallyHidden" for="message">message</label>
+                                <textarea name="message" placeholder="Message" required=""></textarea>
+                                <button class="sendMessage" type="submit">Send Message</button>
+                            </form>
+                        </li>
+                    </ul>
+                </section>
+            </div>
         </div>
 
     </main>

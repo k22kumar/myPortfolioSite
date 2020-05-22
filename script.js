@@ -4,7 +4,6 @@ const mySite = {}
 mySite.init = function() {
     mySite.copyToClipboard();
     AOS.init();
-    mySite.formSubmission();
     mySite.hamburgerMenu();
     mySite.closeMobile(); 
 }

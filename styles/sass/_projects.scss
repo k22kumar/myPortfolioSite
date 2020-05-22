@@ -5,6 +5,15 @@
     section:last-of-type {
         margin-bottom: 0;
     }
+
+    section:nth-child(even) {
+        .projectCard {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+        }
+    }
 }
 
 .projectsContainer {

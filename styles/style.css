@@ -267,6 +267,12 @@ h1, h2, h3, p {
   margin: 0;
 }
 
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 7rem;
+  font-weight: 100;
+}
+
 h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -505,12 +511,6 @@ nav ul li a:hover, nav ul li a:focus {
           flex-direction: column;
 }
 
-.titleCard h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 7rem;
-  font-weight: 100;
-}
-
 .titleCard h2 {
   margin-top: 20px;
   font-weight: 500;
@@ -590,6 +590,13 @@ nav ul li a:hover, nav ul li a:focus {
 
 .projects section:last-of-type {
   margin-bottom: 0;
+}
+
+.projects section:nth-child(even) .projectCard {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .projectsContainer {
@@ -724,20 +731,22 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 .contactContainer {
-  margin-bottom: 30px;
+  padding: 0;
 }
 
-.contactContainer h3 {
+.contactSocial, .contactMessage {
+  margin-bottom: 30px;
+  width: calc(50% - 15px);
+  height: 412px;
+}
+
+.contactSocial h3, .contactMessage h3 {
   text-align: center;
   font-weight: 400;
   font-size: 2.7rem;
 }
 
-.contactMessage, .contactSocial {
-  width: calc(50% - 5px);
-}
-
-.contactMessage button, .contactMessage a, .contactSocial button, .contactSocial a {
+.contactSocial button, .contactSocial a, .contactMessage button, .contactMessage a {
   font-family: "Roboto", sans-serif;
   font-size: 1.7rem;
 }
@@ -766,7 +775,7 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 .contactSocial {
-  margin-right: 10px;
+  margin-right: 30px;
 }
 
 .contactSocial h3 {
@@ -815,6 +824,10 @@ textarea {
   height: 130px;
 }
 
+.contactMessage ul {
+  width: 90%;
+}
+
 .contactMessage li {
   width: 100%;
 }
@@ -852,13 +865,13 @@ footer p + a:hover, footer p + a:focus {
 
 @media (max-width: 950px) {
   h1 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
   h2 {
     font-size: 3rem;
   }
-  .landingLowerHalf .socialBar {
-    margin: 15px 0;
+  .titleCard .socialBar {
+    width: 60%;
   }
   .aboutText p {
     font-size: 1.5;
@@ -875,8 +888,14 @@ footer p + a:hover, footer p + a:focus {
 }
 
 @media (max-width: 800px) {
-  .contacContainer h3 {
-    font-size: 1.6rem;
+  p {
+    font-size: 1.5rem;
+  }
+  .titleCard .socialBar {
+    width: 80%;
+  }
+  .contactContainer h3 {
+    font-size: 2.6rem;
   }
   .contactEmail p, .socialBar p, .contactSocial a, .contactSocial button, .contactMessage button {
     font-size: 1.5rem;
@@ -889,7 +908,44 @@ footer p + a:hover, footer p + a:focus {
   }
 }
 
+@media (max-width: 760px) {
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .contactSocial, .contactMessage {
+    width: 100%;
+  }
+}
+
+@media (max-width: 670px) {
+  .projectCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: auto;
+  }
+}
+
 @media (max-width: 550px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  section {
+    padding: 10px;
+  }
+  .wrapper {
+    width: 90%;
+  }
+  .titleCard .socialBar {
+    width: 100%;
+  }
   .hide {
     display: none;
   }
@@ -927,5 +983,36 @@ footer p + a:hover, footer p + a:focus {
   }
   nav {
     display: none;
+  }
+  .skillsSelector {
+    width: 90%;
+    margin: auto;
+  }
+  .skillChoice {
+    width: 25%;
+  }
+  .skillChoice button {
+    width: 100%;
+  }
+  .skill {
+    width: 90px;
+    margin: 7px 5px;
+  }
+}
+
+@media (max-width: 420px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .skillChoice {
+    width: 25%;
+  }
+  .skillChoice button {
+    width: 100%;
+    padding: 6px 4px;
+    font-size: 1.4rem;
   }
 }

@@ -894,6 +894,10 @@ footer p + a:hover, footer p + a:focus {
   .titleCard .socialBar {
     width: 80%;
   }
+  .skillsSelector {
+    width: 90%;
+    margin: auto;
+  }
   .contactContainer h3 {
     font-size: 2.6rem;
   }
@@ -909,6 +913,26 @@ footer p + a:hover, footer p + a:focus {
 }
 
 @media (max-width: 760px) {
+  .projectCard {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .projectCard .projectImage, .projectCard .projectText {
+    width: 80%;
+  }
+  .projectCard .projectImage {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .projects section:nth-child(2n) .projectCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
   .contactContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -918,15 +942,8 @@ footer p + a:hover, footer p + a:focus {
   .contactSocial, .contactMessage {
     width: 100%;
   }
-}
-
-@media (max-width: 670px) {
-  .projectCard {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    height: auto;
+  .contactSocial {
+    margin-right: 0;
   }
 }
 
@@ -984,10 +1001,6 @@ footer p + a:hover, footer p + a:focus {
   nav {
     display: none;
   }
-  .skillsSelector {
-    width: 90%;
-    margin: auto;
-  }
   .skillChoice {
     width: 25%;
   }
@@ -997,6 +1010,12 @@ footer p + a:hover, footer p + a:focus {
   .skill {
     width: 90px;
     margin: 7px 5px;
+  }
+  .projectsContainer {
+    padding: 20px;
+  }
+  .projectImage, .projectText {
+    width: 90%;
   }
 }
 

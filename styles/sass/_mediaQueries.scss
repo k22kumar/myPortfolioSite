@@ -46,9 +46,14 @@
         }
     }
 
-.contactContainer {
-    h3 {
-        font-size: 2.6rem;
+    .skillsSelector {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contactContainer {
+        h3 {
+            font-size: 2.6rem;
     }
 }
 
@@ -70,6 +75,29 @@
 
 @media (max-width: 760px) {
     
+    .projectCard {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+    .projectImage, .projectText {
+        width: 80%;
+    }
+
+    .projectImage{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    }
+
+    .projects section:nth-child(2n) .projectCard {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
 
     .contactContainer {
     -webkit-box-orient: vertical;
@@ -80,15 +108,8 @@
     .contactSocial, .contactMessage {
         width: 100%;
     }
-}
-
-@media (max-width: 670px) {
-    .projectCard {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        height: auto;
+    .contactSocial {
+        margin-right: 0;
     }
 }
 
@@ -160,11 +181,6 @@
         display: none;
     }
 
-    .skillsSelector {
-        width: 90%;
-        margin: auto;
-    }
-
     .skillChoice{
         width: 25%;
         button {
@@ -175,6 +191,14 @@
     .skill {
         width: 90px;
         margin: 7px 5px;
+    }
+
+    .projectsContainer {
+        padding: 20px;
+    }
+
+    .projectImage, .projectText {
+        width: 90%;
     }
 }
 

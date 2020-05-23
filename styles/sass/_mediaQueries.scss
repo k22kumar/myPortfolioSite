@@ -124,12 +124,8 @@
 @media (max-width: 550px) {
 
     h1 {
-        font-size: 3.5rem;
-    }
-
-    h2 {
-        font-size: 2.4rem;
-    }
+            font-size: 3.5rem;
+        }
 
     section {
         padding: 10px;
@@ -142,6 +138,9 @@
     .titleCard {
         .socialBar {
             width: 100%;
+        } 
+        h2 {
+            font-size: 2.3rem;
         }
     }
 
@@ -195,7 +194,7 @@
     }
 
     .skill {
-        width: 90px;
+        width: 85px;
         margin: 7px 5px;
     }
 
@@ -213,10 +212,6 @@
 @media (max-width: 420px) {
     h1 {
         font-size: 3rem;
-    }
-
-    h2 {
-        font-size: 2rem
     }
 
     .skillChoice{

@@ -235,6 +235,11 @@ html {
   overflow: hidden;
 }
 
+* {
+  outline: 1px red solid !important;
+  visibility: visible !important;
+}
+
 html {
   background-color: #CBDDEF;
   font-size: 62.5%;

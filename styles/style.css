@@ -639,6 +639,29 @@ nav ul li a:hover, nav ul li a:focus {
   text-decoration: underline;
 }
 
+.aboutMeContainer ul li:last-child {
+  margin-top: 10px;
+}
+
+.downloadCV {
+  padding: 10px 15px;
+  background-color: #26304A;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.downloadCV i {
+  margin-left: 10px;
+}
+
+.downloadCV:hover, .downloadCV:focus {
+  background-color: #F59C8A;
+  color: black;
+}
+
 .projects section:first-of-type {
   margin-top: 0;
 }
@@ -696,7 +719,7 @@ nav ul li a:hover, nav ul li a:focus {
   margin: 10px 0px;
 }
 
-.projectCard .projectText .liveLink, .projectCard .projectText .repoLink {
+.projectCard .projectText .liveLink, .projectCard .projectText .repoLink, .projectCard .projectText .downloadCV {
   padding: 10px 15px;
   margin: 10px;
   background-color: #26304A;
@@ -707,7 +730,7 @@ nav ul li a:hover, nav ul li a:focus {
   transition: all 0.3s;
 }
 
-.projectCard .projectText .liveLink:hover, .projectCard .projectText .liveLink:focus, .projectCard .projectText .repoLink:hover, .projectCard .projectText .repoLink:focus {
+.projectCard .projectText .liveLink:hover, .projectCard .projectText .liveLink:focus, .projectCard .projectText .repoLink:hover, .projectCard .projectText .repoLink:focus, .projectCard .projectText .downloadCV:hover, .projectCard .projectText .downloadCV:focus {
   background-color: #F59C8A;
   color: black;
 }
@@ -1013,9 +1036,6 @@ footer p + a:hover, footer p + a:focus {
   h1 {
     font-size: 3.5rem;
   }
-  h2 {
-    font-size: 2.4rem;
-  }
   section {
     padding: 10px;
   }
@@ -1024,6 +1044,9 @@ footer p + a:hover, footer p + a:focus {
   }
   .titleCard .socialBar {
     width: 100%;
+  }
+  .titleCard h2 {
+    font-size: 2.3rem;
   }
   .toggleMenu {
     display: inline-block;
@@ -1070,7 +1093,7 @@ footer p + a:hover, footer p + a:focus {
     width: 100%;
   }
   .skill {
-    width: 90px;
+    width: 85px;
     margin: 7px 5px;
   }
   .projectsContainer {
@@ -1084,9 +1107,6 @@ footer p + a:hover, footer p + a:focus {
 @media (max-width: 420px) {
   h1 {
     font-size: 3rem;
-  }
-  h2 {
-    font-size: 2rem;
   }
   .skillChoice {
     width: 25%;

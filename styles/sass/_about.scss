@@ -16,4 +16,25 @@
     .textHighlight a{
         text-decoration: underline;
     }
+    ul{
+        li:last-child {
+            margin-top: 10px;
+        }
+    } 
+}
+
+.downloadCV {
+    padding: 10px 15px;
+            background-color: $normalButton;
+            color: $normalFont;
+            font-size: 1.6rem;
+            border-radius: 5px;
+            transition: all 0.3s;
+            i {
+                margin-left: 10px;
+            }
+            &:hover, &:focus {
+                background-color: $activeButton;
+                color: $activeFont;
+            }
 }

@@ -23,6 +23,15 @@ mySite.copyToClipboard = function() {
     $('#copyEmail').on('click', function() {
         const text = $('.contactEmail p');
         copy(text);
+        //change Icon to copied
+        $('#copyEmail i').toggleClass('fa-clipboard fa-check' );
+    })
+    
+    //change Icon when user leaves the copy function
+    $('#copyEmail').on('mouseleave touchend', function() {
+        $('#copyEmail i').hasClass('fa-check') ?
+        $('#copyEmail i').toggleClass('fa-clipboard fa-check') :
+        null;
     })
 }
 

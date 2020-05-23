@@ -235,11 +235,6 @@ html {
   overflow: hidden;
 }
 
-* {
-  outline: 1px red solid !important;
-  visibility: visible !important;
-}
-
 html {
   background-color: #CBDDEF;
   font-size: 62.5%;
@@ -322,6 +317,16 @@ section {
   border-radius: 5px;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+textarea,
+input[type="text"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-radius: 0;
 }
 
 .wrapper {

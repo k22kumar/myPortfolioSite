@@ -21,7 +21,6 @@ mySite.mixer = mixitup('.skillGallery', {
 // function to copy to clip board upon button click
 mySite.copyToClipboard = function() {
     $('#copyEmail').on('click', function() {
-        console.log("asfasdf")
         const text = $('.contactEmail p');
         copy(text);
     })
@@ -46,7 +45,6 @@ mySite.hamburgerMenu = function() {
 
 mySite.closeMobile = function () {
     $('.navItem a').on('click', function() {
-        console.log('clicked')
         $('nav').toggleClass('mobileNav');
     })
 }

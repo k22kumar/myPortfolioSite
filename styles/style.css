@@ -337,7 +337,7 @@ input[type="submit"] {
 
 .angledDivider {
   width: 100%;
-  height: 10vw;
+  height: 7vw;
   background-color: #A0C9F3;
   -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
           clip-path: polygon(50% 100%, 0 0, 100% 0);
@@ -497,16 +497,32 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 .toggleMenu {
+  width: 50px;
+  height: 50px;
   display: none;
   position: fixed;
   top: 20px;
   right: 20px;
   z-index: 3;
+  font-size: 5rem;
 }
 
-.toggleMenu i {
-  font-size: 5rem;
+.close, .open {
+  position: absolute;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.close {
+  color: white;
+}
+
+.open {
   color: #26304A;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 .titleCard {
@@ -1036,6 +1052,9 @@ footer p + a:hover, footer p + a:focus {
   h1 {
     font-size: 3.5rem;
   }
+  h2 {
+    padding-top: 30px;
+  }
   section {
     padding: 10px;
   }
@@ -1049,7 +1068,15 @@ footer p + a:hover, footer p + a:focus {
     font-size: 2.3rem;
   }
   .toggleMenu {
-    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .mobileNav {
     -webkit-transform: translateY(0%);

@@ -76,16 +76,33 @@ nav ul{
 }
 
 .toggleMenu {
+    width: 50px;
+    height: 50px;
     display: none;
     position: fixed;
     top: 20px;
     right: 20px;
     z-index: 3;
-    i {
-        font-size: 5rem;
+    font-size: 5rem;
+    
+}
+
+.close, .open {
+    position: absolute;
+transition: 0.5s ease-in-out;
+}
+
+.close {
+    color: white;
+}
+
+.open {
         color: $normalButton;
     }
+.hidden {
+    opacity: 0;
 }
+
 
 .titleCard {
     box-shadow: none;
@@ -124,8 +141,8 @@ nav ul{
             margin-top: -16px;
         }
     }
+
     .socialBar {
-        
     width: 40%;
     justify-content: space-evenly;
     margin: 15px;

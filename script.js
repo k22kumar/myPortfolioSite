@@ -28,7 +28,7 @@ mySite.copyToClipboard = function() {
     })
     
     //change Icon when user leaves the copy function
-    $('#copyEmail').on('mouseleave touchend', function() {
+    $('#copyEmail').on('mouseleave', function() {
         $('#copyEmail i').hasClass('fa-check') ?
         $('#copyEmail i').toggleClass('fa-clipboard fa-check') :
         null;
@@ -48,13 +48,16 @@ function copy(element) {
 // function to close hamburger menu when link is clicked
 mySite.hamburgerMenu = function() {
     $('#toggleMenu').on('click', function () {
-        $('nav').toggleClass('mobileNav hide');
+        $('nav').toggleClass('mobileNav');
+        $('#toggleMenu i').toggleClass('hidden');
     });
 }
 
+// closes the mobile nav on LINK click
 mySite.closeMobile = function () {
     $('.navItem a').on('click', function() {
         $('nav').toggleClass('mobileNav');
+        $('#toggleMenu i').toggleClass('open close fa-bars fa-times');
     })
 }
 
